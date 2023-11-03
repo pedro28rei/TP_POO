@@ -1,8 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+ * Pedro Rei
+ * pedro28rei@gmail.com
+ * 3/11/2023
+ */
+using System;
+using Pessoa;
 
 namespace TP_POO
 {
@@ -10,7 +12,7 @@ namespace TP_POO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Trabalho prático POO!");
         }
     }
 }
