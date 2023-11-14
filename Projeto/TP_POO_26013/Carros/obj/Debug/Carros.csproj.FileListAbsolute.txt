@@ -1,0 +1,6 @@
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Carros\bin\Debug\Carros.dll
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Carros\bin\Debug\Carros.pdb
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Carros\obj\Debug\Carros.csproj.AssemblyReference.cache
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Carros\obj\Debug\Carros.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Carros\obj\Debug\Carros.dll
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Carros\obj\Debug\Carros.pdb

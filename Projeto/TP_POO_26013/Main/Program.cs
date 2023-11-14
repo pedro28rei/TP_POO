@@ -11,6 +11,7 @@
 
 using System;
 using Pessoas;
+using Carros;
 
 
 namespace Main
@@ -24,6 +25,7 @@ namespace Main
         {
             Console.WriteLine("Hello World");
 
+            Carro c1 = new Carro();
             Pessoa p1 = new Pessoa();
 
             Console.WriteLine("Nome: {0} | Idade: {1}", p1.Nome, p1.Idade);
