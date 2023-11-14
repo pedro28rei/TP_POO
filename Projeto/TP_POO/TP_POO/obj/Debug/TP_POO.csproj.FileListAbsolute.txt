@@ -1,7 +1,0 @@
-C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO\TP_POO\bin\Debug\TP_POO.exe.config
-C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO\TP_POO\bin\Debug\TP_POO.exe
-C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO\TP_POO\bin\Debug\TP_POO.pdb
-C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO\TP_POO\obj\Debug\TP_POO.csproj.AssemblyReference.cache
-C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO\TP_POO\obj\Debug\TP_POO.csproj.CoreCompileInputs.cache
-C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO\TP_POO\obj\Debug\TP_POO.exe
-C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO\TP_POO\obj\Debug\TP_POO.pdb
