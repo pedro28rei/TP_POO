@@ -1,5 +1,5 @@
 ﻿/*
-* Descrição: Elaboração da classe pessoa
+* Descrição: Elaboração da classe Pessoa
 * Nome: Pedro Rei
 * Contacto: pedro28rei@gmail.com
 * Data: 05/11/2023
@@ -8,101 +8,103 @@
 * 
 */
 
+
+using System;
+
 namespace Pessoas
 {
-    public class pessoa
+    public class Pessoa
     {
-        #region ATRIBUTOS
 
-        private string nome;
-        private int idade;
-        private DateOnly dataNascimento;
+            #region ATRIBUTOS
 
-
-        #endregion
+            private string nome;
+            private int idade;
+            private DateTime dataNascimento;
 
 
-        #region METODOS
+            #endregion
 
 
-        #region CONSTRUTORES
-
-        /// <summary>
-        /// Construtor por omissão que cria uma pessoa,sem parâmetros definidos 
-        /// </summary>
-        public pessoa()
-        {
-            nome = "";
-            idade = 0;
-            dataNascimento = new DateOnly(0, 0, 0);
-        }
+            #region METODOS
 
 
-        /// <summary>
-        /// Construtor por omissão que cria uma pessoa, com parâmetros definidos
-        /// </summary>
-        /// <param name="nome"></param>
-        /// <param name="idade"></param>
-        /// <param name="dataNascimento"></param>
-        public pessoa(string nome, int idade, DateOnly dataNascimento)
-        {
-            this.nome = nome;
-            this.idade = idade;
-            this.dataNascimento = dataNascimento;
-        }
+            #region CONSTRUTORES
 
-        #endregion
+            /// <summary>
+            /// Construtor por omissão que cria uma Pessoa,sem parâmetros definidos 
+            /// </summary>
+            public Pessoa()
+            {
+                nome = "";
+                idade = 0;
+            }
 
 
-        #region PRORIEDADES
+            /// <summary>
+            /// Construtor por omissão que cria uma Pessoa, com parâmetros definidos
+            /// </summary>
+            /// <param name="nome"></param>
+            /// <param name="idade"></param>
+            /// <param name="dataNascimento"></param>
+            public Pessoa(string nome, int idade, DateTime dataNascimento)
+            {
+                this.nome = nome;
+                this.idade = idade;
+                this.dataNascimento = dataNascimento;
+            }
 
-        /// <summary>
-        /// Propriedade da idade de uma pessoa
-        /// </summary>
-        public int Idade
-        {
-            set { idade = value; }
-            get { return idade; }
-        }
-
-        /// <summary>
-        /// Propriedade do nome de uma pessoa
-        /// </summary>
-        public string Nome
-        {
-            set { nome = value; }
-            get { return nome; }
-        }
-        /// <summary>
-        /// Propriedade da dataNascimento de uma pessoa
-        /// </summary>
-
-        public DateOnly DataNascimento
-        {
-            set { dataNascimento = value; }
-            get { return dataNascimento; }
-        }
-
-        #endregion
+            #endregion
 
 
-        #region ATRIBUTOS
-        #endregion
+            #region PRORIEDADES
+
+            /// <summary>
+            /// Propriedade da idade de uma Pessoa
+            /// </summary>
+            public int Idade
+            {
+                set { idade = value; }
+                get { return idade; }
+            }
+
+            /// <summary>
+            /// Propriedade do nome de uma Pessoa
+            /// </summary>
+            public string Nome
+            {
+                set { nome = value; }
+                get { return nome; }
+            }
+            /// <summary>
+            /// Propriedade da dataNascimento de uma Pessoa
+            /// </summary>
+
+            public DateTime DataNascimento
+            {
+                set { dataNascimento = value; }
+                get { return dataNascimento; }
+            }
+
+            #endregion
 
 
-        #region OPERADORES
-        #endregion
+            #region ATRIBUTOS
+            #endregion
 
 
-        #region OVERRIDES
-        #endregion
+            #region OPERADORES
+            #endregion
 
 
-        #region DESTRUIDORES
-        #endregion
+            #region OVERRIDES
+            #endregion
 
-        #endregion
 
-    }
+            #region DESTRUIDORES
+            #endregion
 
+            #endregion
+
+     }
 }
