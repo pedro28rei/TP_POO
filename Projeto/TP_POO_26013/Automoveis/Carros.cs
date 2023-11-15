@@ -1,5 +1,5 @@
 ﻿/*
-* Descrição: Realização da classe Clientes
+* Descrição: Realização da classe Carros
 * Nome: Pedro Rei
 * Contacto: pedro28rei@gmail.com
 * Data: 08/11/2023
@@ -8,18 +8,17 @@
 * 
 */
 
-
-namespace Pessoas
+namespace Automoveis
 {
     /// <summary>
-    /// Classe Clientes que vai conter vários clientes
+    /// Classe Carros
     /// </summary>
-    public class Clientes
+    public class Carros
     {
         #region ATRIBUTOS
 
-        public const int MAXCLIENTES = 999;
-        private Cliente[] listaClientes;
+        public const int MAXCARROS = 2000;
+        private Carro[] listaCarros;
 
 
         #endregion
@@ -30,22 +29,22 @@ namespace Pessoas
         #region CONSTRUTORES
 
         /// <summary>
-        /// Construtor por omissão que cria lista de clientes, sem parâmetros definidos
+        /// Construtor por omissão que cria lista de carros, sem parâmetros definidos
         /// </summary>
-        public Clientes()
+        public Carros()
         {
-            listaClientes = new Cliente[MAXCLIENTES];
+            listaCarros = new Carro[MAXCARROS];
         }
 
 
         /// <summary>
-        /// Construtor por omissão que cria lista de clientes, com parâmetros definidos
+        /// Construtor por omissão que cria lista de carros, com parâmetros definidos
         /// </summary>
         /// <param name="MAXCLIENTES"></param>
         /// <param name="listaClientes"></param>
-        public Clientes(int MAXCLIENTES, Cliente[] listaClientes)
+        public Carros(int MAXCLIENTES, Carro[] listaClientes)
         {
-            this.listaClientes = listaClientes;
+            this.listaCarros = listaClientes;
         }
 
 
@@ -54,12 +53,12 @@ namespace Pessoas
         #region PROPRIEDADES
 
         /// <summary>
-        /// Propriedade de leitura que fornece uma copia do array cliente
+        /// Propriedade de leitura que fornece uma copia do array carro
         /// </summary>
-        public Cliente[] ListaClientes
+        public Carro[] ListaClientes
         {
-           
-            get { return (Cliente[])listaClientes.Clone(); }
+
+            get { return (Carro[])listaCarros.Clone(); }
         }
 
 
@@ -69,7 +68,7 @@ namespace Pessoas
         #region OVERRIDES
 
         /// <summary>
-        /// Override ToString da classe Clientes
+        /// Override ToString da classe Carros
         /// </summary>
         /// <returns></returns>
         public override string ToString()

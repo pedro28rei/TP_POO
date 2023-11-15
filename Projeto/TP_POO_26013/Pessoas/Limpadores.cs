@@ -14,7 +14,7 @@ namespace Pessoas
     /// <summary>
     /// Classe Limpadores que vai conter vários limpadores
     /// </summary>
-    internal class Limpadores
+    public class Limpadores
     {
         #region ATRIBUTOS
 

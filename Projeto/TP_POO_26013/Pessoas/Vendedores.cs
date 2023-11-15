@@ -13,7 +13,7 @@ namespace Pessoas
     /// <summary>
     /// Classe vendedores que contem vários  vendedores
     /// </summary>
-    internal class Vendedores
+    public class Vendedores
     {
         #region ATRIBUTOS
 

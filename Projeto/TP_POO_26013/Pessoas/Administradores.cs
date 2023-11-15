@@ -13,7 +13,7 @@ namespace Pessoas
     /// <summary>
     /// Classe Administradores quye contém vários administradores
     /// </summary>
-    internal class Administradores
+    public class Administradores
     {
         #region ATRIBUTOS
 

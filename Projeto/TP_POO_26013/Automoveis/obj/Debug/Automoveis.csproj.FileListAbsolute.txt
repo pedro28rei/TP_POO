@@ -1,0 +1,6 @@
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Automoveis\bin\Debug\Automoveis.dll
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Automoveis\bin\Debug\Automoveis.pdb
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Automoveis\obj\Debug\Automoveis.csproj.AssemblyReference.cache
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Automoveis\obj\Debug\Automoveis.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Automoveis\obj\Debug\Automoveis.dll
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Automoveis\obj\Debug\Automoveis.pdb

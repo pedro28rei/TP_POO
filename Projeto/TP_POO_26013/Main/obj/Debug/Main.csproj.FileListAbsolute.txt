@@ -8,3 +8,5 @@ C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Main\obj\Debu
 C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Main\bin\Debug\Pessoas.dll
 C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Main\bin\Debug\Pessoas.pdb
 C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Main\obj\Debug\Main.csproj.CopyComplete
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Main\bin\Debug\Automoveis.dll
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\Main\bin\Debug\Automoveis.pdb
