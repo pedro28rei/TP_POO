@@ -42,9 +42,9 @@ namespace Automoveis
         /// </summary>
         /// <param name="MAXCLIENTES"></param>
         /// <param name="listaClientes"></param>
-        public Carros(int MAXCLIENTES, Carro[] listaClientes)
+        public Carros(int MAXCARROS, Carro[] listaCarros)
         {
-            this.listaCarros = listaClientes;
+            this.listaCarros = listaCarros;
         }
 
 

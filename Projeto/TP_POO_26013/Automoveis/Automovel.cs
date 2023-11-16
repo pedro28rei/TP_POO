@@ -69,6 +69,16 @@ namespace Automoveis
 
         #region PROPRIEDADES
 
+
+        /// <summary>
+        /// Propriedade do codigo  de um automovel
+        /// </summary>
+        public int CodigoAutomovel
+        {
+            set { codigoAutomovel = value; }
+            get { return codigoAutomovel; }
+        }
+
         /// <summary>
         /// Propriedade da Data de Fabrico de uma Pessoa
         /// </summary>

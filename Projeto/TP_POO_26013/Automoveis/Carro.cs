@@ -141,7 +141,7 @@ namespace Automoveis
         }
 
         /// <summary>
-        /// Verificar se um objeto da classe Pessoa é diferente do outro objeto
+        /// Verificar se um objeto da classe Carro é diferente do outro objeto
         /// </summary>
         /// <param name="a1"></param>
         /// <param name="a2"></param>
@@ -162,7 +162,7 @@ namespace Automoveis
         /// <returns></returns>
         public override string ToString()
         {
-            return "|Codigo: " + codigoCarro + "|Cavalos: " + cavalos + "|Consumo: " + consumo + "|Cor: " + cor + "|Lugares: " + lugares;
+            return "|Codigo Automovel: " + CodigoAutomovel + "|Data Fabrico: " + DataFabrico + "|Marca: " + Marca + "|Modelo: " + Modelo + "Matricula" + Matricula + "|Preco: " + Preco +"|Codigo: " + codigoCarro + "|Cavalos: " + cavalos + "|Consumo: " + consumo + "|Cor: " + cor + "|Lugares: " + lugares;
         }
 
         /// <summary>
