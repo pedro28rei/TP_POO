@@ -12,7 +12,7 @@
 using System;
 
 
-namespace Pessoas
+namespace ObjetosNegocio
 {
     /// <summary>
     /// Classe Pessoa, que vai ter como objetos pessoas, que tem um nome, idade, data nascimento, sexo e morada

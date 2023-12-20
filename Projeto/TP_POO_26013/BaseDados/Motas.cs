@@ -8,10 +8,16 @@
 * 
 */
 
+using ObjetosNegocio;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
+
 namespace BaseDados
 {
     /// <summary>
-    /// Classe Motas, que contém varios objetos do tipo Mota
+    /// Classe Motas, que vai conter uma lista que é responsável para armezenar as motas
     /// </summary>
     public class Motas
     {
@@ -19,8 +25,7 @@ namespace BaseDados
         #region ATRIBUTOS
 
 
-        public const int MAXMOTAS = 2000;
-        private Mota[] listaMotas;
+        private static List<Mota> listaMotas;
 
         #endregion
 
@@ -30,37 +35,36 @@ namespace BaseDados
         #region CONSTRUTORES
 
         /// <summary>
-        /// Construtor por omissão que cria lista de motas, sem parâmetros definidos
+        /// Construtor que inicializa a lista de motas
         /// </summary>
-        public Motas()
+        static Motas()
         {
-            listaMotas = new Mota[MAXMOTAS];
+            listaMotas = new List<Mota>();
         }
 
 
         /// <summary>
-        /// Construtor por omissão que cria lista de motas, com parâmetros definidos
+        /// Construtor por omissão
         /// </summary>
-        /// <param name="MAXCLIENTES"></param>
-        /// <param name="listaClientes"></param>
-        public Motas(int MAXMOTAS, Mota[] listaMotas)
+        public Motas()
         {
-            this.listaMotas = listaMotas;
         }
 
 
         #endregion
 
+
         #region PROPRIEDADES
 
-        /// <summary>
-        /// Propriedade de leitura que fornece uma copia do array mota
-        /// </summary>
-        public Mota[] ListaMotas
-        {
 
-            get { return (Mota[])listaMotas.Clone(); }
+        /// <summary>
+        /// Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém
+        /// </summary>
+        public List<Mota> ObterLista
+        {
+            get { return listaMotas; }
         }
+
 
         #endregion
 
@@ -76,6 +80,93 @@ namespace BaseDados
             return base.ToString();
         }
 
+        #endregion
+
+
+        #region OUTROSMETODOS
+
+        /// <summary>
+        /// Método que adiciona um a mota na lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="mota"></param>
+        /// <returns></returns>
+        public static bool AdicionarMota(Mota mota)
+        {
+            foreach (Mota c in listaMotas)
+            {
+                if (c.Equals(mota)) { return false; }
+            }
+
+            listaMotas.Add(mota);
+
+            return true;
+        }
+
+        /// <summary>
+        /// Método que remove uma mota da lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="mota"></param>
+        /// <returns></returns>
+        public static bool RemoverMota(Mota mota)
+        {
+            foreach (Mota c in listaMotas)
+            {
+                if (c.Equals(mota)) { listaMotas.Remove(mota); return true; }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Método que ordena a lista pelo número de cliente que forma crescente
+        /// </summary>
+        /// <param name="motas"></param>
+        /// <returns></returns>
+        public static bool OrdenarMotas()
+        {
+            listaMotas.Sort();
+            return true;
+        }
+
+        /// <summary>
+        /// Método que lê um ficheiro em binário, com a informação das Motas
+        /// </summary>
+        /// <returns></returns>
+        public static List<Mota> LerFicheiroMotas()
+        {
+
+            List<Mota> aux = new List<Mota>();
+
+            FileStream fs = File.Open("Motas.bin", FileMode.Open, FileAccess.ReadWrite);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            aux = (List<Mota>)bf.Deserialize(fs);
+
+
+            fs.Close();
+
+            return aux;
+
+        }
+
+        /// <summary>
+        /// Método que guarda num ficheiro em binário, a informação dos Clientes
+        /// </summary>
+        /// <returns></returns>
+        public static bool GuardarFicheiroMotas()
+        {
+
+            FileStream fs = File.Open("Motas.bin", FileMode.Create, FileAccess.ReadWrite);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            bf.Serialize(fs, listaMotas);
+
+            fs.Close();
+
+            return true;
+        }
         #endregion
 
         #endregion

@@ -1,0 +1,6 @@
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\ObjetosNegocio\obj\Debug\ObjetosNegocio.csproj.AssemblyReference.cache
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\ObjetosNegocio\obj\Debug\ObjetosNegocio.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\ObjetosNegocio\bin\Debug\ObjetosNegocio.dll
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\ObjetosNegocio\bin\Debug\ObjetosNegocio.pdb
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\ObjetosNegocio\obj\Debug\ObjetosNegocio.dll
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\ObjetosNegocio\obj\Debug\ObjetosNegocio.pdb

@@ -9,18 +9,22 @@
 */
 
 
+using ObjetosNegocio;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
+
 namespace BaseDados
 {
     /// <summary>
-    /// Classe Limpadores que vai conter vários limpadores
+    ///  Classe Limpadores que vai conter uma lista que é responsãvel por armazenar os limpadores
     /// </summary>
     public class Limpadores
     {
         #region ATRIBUTOS
 
-        public const int MAXLIMPADORES = 250;
-        private Limpador[] listaLimpadores;
-
+        private static List<Limpador> listaLimpadores;
 
         #endregion
 
@@ -30,22 +34,19 @@ namespace BaseDados
         #region CONSTRUTORES
 
         /// <summary>
-        /// Construtor por omissão que cria lista de clientes, sem parâmetros definidos
+        /// Construtor por omissão que cria lista de limpadores
         /// </summary>
-        public Limpadores()
+        static Limpadores()
         {
-            listaLimpadores = new Limpador[MAXLIMPADORES];
+            listaLimpadores = new List<Limpador>();
         }
 
 
         /// <summary>
-        /// Construtor por omissão que cria lista de limpadores, com parâmetros definidos
+        /// Construtor por omissão
         /// </summary>
-        /// <param name="MAXCLIENTES"></param>
-        /// <param name="listaClientes"></param>
-        public Limpadores(int MAXCLIMPADORES, Limpador[] listaLimpadores)
+        public Limpadores()
         {
-            this.listaLimpadores = listaLimpadores;
         }
 
         #endregion
@@ -54,12 +55,11 @@ namespace BaseDados
         #region PROPRIEDADES
 
         /// <summary>
-        /// Propriedade de leitura que fornece uma copia do array limpadores
+        /// Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém
         /// </summary>
-        public Limpadores[] ListaLimpadores
+        public List<Limpador> ObterLista
         {
-
-            get { return (Limpadores[])listaLimpadores.Clone(); }
+            get { return listaLimpadores; }
         }
 
 
@@ -75,6 +75,94 @@ namespace BaseDados
         public override string ToString()
         {
             return base.ToString();
+        }
+
+        #endregion
+
+
+        #region OUTROSMETODOS
+
+        /// <summary>
+        /// Método que adiciona um limpador da lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="limpador"></param>
+        /// <returns></returns>
+        public static bool AdicionarLimpador(Limpador limpador)
+        {
+            foreach (Limpador c in listaLimpadores)
+            {
+                if (c.Equals(limpador)) { return false; }
+            }
+
+            listaLimpadores.Add(limpador);
+
+            return true;
+        }
+
+        /// <summary>
+        /// Método que remove um limpador da lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
+        public static bool RemoverLimpador(Limpador limpador)
+        {
+            foreach (Limpador c in listaLimpadores)
+            {
+                if (c.Equals(limpador)) { listaLimpadores.Remove(limpador); return true; }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Método que ordena a lista pelo número de limpadores que forma crescente
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
+        public static bool OrdenarLimpadores()
+        {
+            listaLimpadores.Sort();
+            return true;
+        }
+
+        /// <summary>
+        /// Método que lê um ficheiro em binário, com a informação dos Limpadores
+        /// </summary>
+        /// <returns></returns>
+        public static List<Limpador> LerFicheiroLimpadores()
+        {
+
+            List<Limpador> aux = new List<Limpador>();
+
+            FileStream fs = File.Open("Limpadores.bin", FileMode.Open, FileAccess.ReadWrite);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            aux = (List<Limpador>)bf.Deserialize(fs);
+
+
+            fs.Close();
+
+            return aux;
+
+        }
+
+        /// <summary>
+        /// Método que guarda num ficheiro em binário, a informação dos Clientes
+        /// </summary>
+        /// <returns></returns>
+        public static bool GuardarFicheiroClientes()
+        {
+
+            FileStream fs = File.Open("Limpadores.bin", FileMode.Create, FileAccess.ReadWrite);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            bf.Serialize(fs, listaLimpadores);
+
+            fs.Close();
+
+            return true;
         }
 
         #endregion

@@ -8,7 +8,7 @@
 * 
 */
 
-namespace Automoveis
+namespace ObjetosNegocio
 {
     /// <summary>
     /// Classe Mota

@@ -8,17 +8,21 @@
 * 
 */
 
+using ObjetosNegocio;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 namespace BaseDados
 {
     /// <summary>
-    /// Classe Administradores quye contém vários administradores
+    ///  Classe Administradores que vai conter uma lista que é responsãvel por armazenar os administradores
     /// </summary>
     public class Administradores
     {
         #region ATRIBUTOS
 
-        public const int MAXADMINISTRADORES = 999;
-        private Administrador[] listaAdministradores;
+        private static List<Administrador> listaAdministradores;
 
 
         #endregion
@@ -29,38 +33,121 @@ namespace BaseDados
         #region CONSTRUTORES
 
         /// <summary>
-        /// Construtor por omissão que cria lista de administradores, sem parâmetros definidos
+        /// Construtor que inicializa a lista de administradores
         /// </summary>
-        public Administradores()
+        static Administradores()
         {
-            listaAdministradores = new Administrador[MAXADMINISTRADORES];
+            listaAdministradores = new List<Administrador>();
         }
 
 
         /// <summary>
-        /// Construtor por omissão que cria lista de administradores, com parâmetros definidos
+        /// Construtor por omissão
         /// </summary>
-        /// <param name="MAXCLIENTES"></param>
-        /// <param name="listaClientes"></param>
-        public Administradores(int MAXADMINISTRADORES, Administrador[] listaAdministradores)
+        public Administradores()
         {
-            this.listaAdministradores = listaAdministradores;
         }
 
 
         #endregion
 
+
         #region PROPRIEDADES
 
         /// <summary>
-        /// Propriedade de leitura que fornece uma copia do array administrador
+        /// Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém
         /// </summary>
-        public Administrador[] ListaAdministradores
+        public List<Administrador> ObterLista
         {
-
-            get { return (Administrador[])listaAdministradores.Clone(); }
+            get { return listaAdministradores; }
         }
 
+        #endregion
+
+
+        #region OUTROSMETODOS
+
+        /// <summary>
+        /// Método que adiciona um administrador da lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="administrador"></param>
+        /// <returns></returns>
+        public static bool AdicionarAdministrador(Administrador administrador)
+        {
+            foreach (Administrador c in listaAdministradores)
+            {
+                if (c.Equals(administrador)) { return false; }
+            }
+
+            listaAdministradores.Add(administrador);
+
+            return true;
+        }
+
+        /// <summary>
+        /// Método que remove um administrador da lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="administradores"></param>
+        /// <returns></returns>
+        public static bool RemoverAdminisrador(Administrador administradores)
+        {
+            foreach (Administrador c in listaAdministradores)
+            {
+                if (c.Equals(administradores)) { listaAdministradores.Remove(administradores); return true; }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Método que ordena a lista pelo número de administradores por forma crescente
+        /// </summary>
+        /// <returns></returns>
+        public static bool OrdenarCliente()
+        {
+            listaAdministradores.Sort();
+            return true;
+        }
+
+        /// <summary>
+        /// Método que lê um ficheiro em binário, com a informação dos Administradores
+        /// </summary>
+        /// <returns></returns>
+        public static List<Administrador> LerFicheiroClientes()
+        {
+
+            List<Administrador> aux = new List<Administrador>();
+
+            FileStream fs = File.Open("Administradores.bin", FileMode.Open, FileAccess.ReadWrite);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            aux = (List<Administrador>)bf.Deserialize(fs);
+
+
+            fs.Close();
+
+            return aux;
+
+        }
+
+        /// <summary>
+        /// Método que guarda num ficheiro em binário, a informação dos Administradores
+        /// </summary>
+        /// <returns></returns>
+        public static bool GuardarFicheiroAdministradores()
+        {
+
+            FileStream fs = File.Open("Administradores.bin", FileMode.Create, FileAccess.ReadWrite);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            bf.Serialize(fs, listaAdministradores);
+
+            fs.Close();
+
+            return true;
+        }
 
         #endregion
 

@@ -8,11 +8,8 @@
 * 
 */
 
-
+using ObjetosNegocio;
 using System;
-using Pessoas;
-using Automoveis;
-
 
 namespace Main
 { 

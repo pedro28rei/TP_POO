@@ -8,18 +8,22 @@
 * 
 */
 
+using ObjetosNegocio;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace BaseDados
 {
     /// <summary>
-    /// Classe Clientes que vai conter vários clientes
+    /// Classe Clientes que vai conter uma lista que é responsãvel por armazenar os clientes
     /// </summary>
     public class Clientes
     {
+
         #region ATRIBUTOS
 
-        public const int MAXCLIENTES = 999;
-        private Cliente[] listaClientes;
+        private static List<Cliente> listaClientes;
 
 
         #endregion
@@ -30,36 +34,31 @@ namespace BaseDados
         #region CONSTRUTORES
 
         /// <summary>
-        /// Construtor por omissão que cria lista de clientes, sem parâmetros definidos
+        /// Construtor que inicializa a lista de clientes
         /// </summary>
-        public Clientes()
+        static Clientes()
         {
-            listaClientes = new Cliente[MAXCLIENTES];
+            listaClientes = new List<Cliente>();
         }
 
 
         /// <summary>
-        /// Construtor por omissão que cria lista de clientes, com parâmetros definidos
+        /// Construtor por omissão
         /// </summary>
-        /// <param name="MAXCLIENTES"></param>
-        /// <param name="listaClientes"></param>
-        public Clientes(int MAXCLIENTES, Cliente[] listaClientes)
+        public Clientes()
         {
-            this.listaClientes = listaClientes;
         }
-
 
         #endregion
 
         #region PROPRIEDADES
 
         /// <summary>
-        /// Propriedade de leitura que fornece uma copia do array cliente
+        /// Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém
         /// </summary>
-        public Cliente[] ListaClientes
+        public List<Cliente> ObterLista
         {
-           
-            get { return (Cliente[])listaClientes.Clone(); }
+            get { return listaClientes; }         
         }
 
 
@@ -67,18 +66,97 @@ namespace BaseDados
 
 
         #region OVERRIDES
+        #endregion
+
+
+        #region OUTROSMETODOS
 
         /// <summary>
-        /// Override ToString da classe Clientes
+        /// Método que adiciona um cliente da lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
+        public static bool AdicionarCliente(Cliente cliente)
+        {
+            foreach (Cliente c in listaClientes)
+            {
+                if (c.Equals(cliente)) { return false; }
+            }
+
+            listaClientes.Add(cliente);
+
+            return true;
+        }
+
+        /// <summary>
+        /// Método que remove um cliente da lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
+        public static bool RemoverCliente(Cliente cliente)
+        {
+            foreach (Cliente c in listaClientes)
+            {
+                if (c.Equals(cliente)) { listaClientes.Remove(cliente);  return true; }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Método que ordena a lista pelo número de cliente que forma crescente
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
+        public static bool OrdenarCliente()
+        {
+            listaClientes.Sort();
+            return true;
+        }
+
+        /// <summary>
+        /// Método que lê um ficheiro em binário, com a informação dos Clientes
         /// </summary>
         /// <returns></returns>
-        public override string ToString()
+        public static List<Cliente> LerFicheiroClientes()
         {
-            return base.ToString();
+        
+            List<Cliente> aux = new List<Cliente>();
+
+                FileStream fs = File.Open("Clientes.bin", FileMode.Open, FileAccess.ReadWrite);
+
+                BinaryFormatter bf = new BinaryFormatter();
+
+                aux = (List<Cliente>)bf.Deserialize(fs);
+
+        
+            fs.Close();
+
+            return aux;
+
+        }
+
+        /// <summary>
+        /// Método que guarda num ficheiro em binário, a informação dos Clientes
+        /// </summary>
+        /// <returns></returns>
+        public static bool GuardarFicheiroClientes()
+        {
+
+                FileStream fs = File.Open("Clientes.bin", FileMode.Create, FileAccess.ReadWrite);
+
+                BinaryFormatter bf = new BinaryFormatter();
+
+                bf.Serialize(fs, listaClientes);
+
+            fs.Close();
+
+            return true;
         }
 
         #endregion
 
         #endregion
+
     }
 }

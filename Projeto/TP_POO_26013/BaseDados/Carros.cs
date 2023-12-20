@@ -8,17 +8,21 @@
 * 
 */
 
+using ObjetosNegocio;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 namespace BaseDados
 {
     /// <summary>
-    /// Classe Carros
+    /// Classe Carros que vai conter uma lista que é responsãvel por armazenar os carros
     /// </summary>
     public class Carros
     {
         #region ATRIBUTOS
 
-        public const int MAXCARROS = 2000;
-        private Carro[] listaCarros;
+        private static List<Carro> listaCarros;
 
 
         #endregion
@@ -29,38 +33,34 @@ namespace BaseDados
         #region CONSTRUTORES
 
         /// <summary>
-        /// Construtor por omissão que cria lista de carros, sem parâmetros definidos
+        /// Construtor que inicializa a lista de carros
         /// </summary>
-        public Carros()
+        static Carros()
         {
-            listaCarros = new Carro[MAXCARROS];
+            listaCarros = new List<Carro>();
         }
 
 
         /// <summary>
-        /// Construtor por omissão que cria lista de carros, com parâmetros definidos
+        /// Construtor por omissão
         /// </summary>
-        /// <param name="MAXCLIENTES"></param>
-        /// <param name="listaClientes"></param>
-        public Carros(int MAXCARROS, Carro[] listaCarros)
+        public Carros()
         {
-            this.listaCarros = listaCarros;
         }
 
 
         #endregion
 
+
         #region PROPRIEDADES
 
         /// <summary>
-        /// Propriedade de leitura que fornece uma copia do array carro
+        /// Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém
         /// </summary>
-        public Carro[] ListaClientes
+        public List<Carro> ObterLista
         {
-
-            get { return (Carro[])listaCarros.Clone(); }
+            get { return listaCarros; }
         }
-
 
         #endregion
 
@@ -78,6 +78,94 @@ namespace BaseDados
 
         #endregion
 
+
+        #region OUTROSMETODOS
+
+        /// <summary>
+        /// Método que adiciona um carro da lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="carro"></param>
+        /// <returns></returns>
+        public static bool AdicionarCarro(Carro carro)
+        {
+            foreach (Carro c in listaCarros)
+            {
+                if (c.Equals(carro)) { return false; }
+            }
+
+            listaCarros.Add(carro);
+
+            return true;
+        }
+
+        /// <summary>
+        /// Método que remove um carro da lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
+        public static bool RemoverCarrro(Carro carro)
+        {
+            foreach (Carro c in listaCarros)
+            {
+                if (c.Equals(carro)) { listaCarros.Remove(carro); return true; }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Método que ordena a lista pelo número de carro de forma crescente
+        /// </summary>
+        /// <returns></returns>
+        public static bool OrdenarCarro()
+        {
+            listaCarros.Sort();
+            return true;
+        }
+
+        /// <summary>
+        /// Método que lê um ficheiro em binário, com a informação dos Carros
+        /// </summary>
+        /// <returns></returns>
+        public static List<Carro> LerFicheiroCarros()
+        {
+
+            List<Carro> aux = new List<Carro>();
+
+            FileStream fs = File.Open("Carros.bin", FileMode.Open, FileAccess.ReadWrite);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            aux = (List<Carro>)bf.Deserialize(fs);
+
+
+            fs.Close();
+
+            return aux;
+
+        }
+
+        /// <summary>
+        /// Método que guarda num ficheiro em binário, a informação dos Carros
+        /// </summary>
+        /// <returns></returns>
+        public static bool GuardarFicheiroCarros()
+        {
+
+            FileStream fs = File.Open("Carros.bin", FileMode.Create, FileAccess.ReadWrite);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            bf.Serialize(fs, listaCarros);
+
+            fs.Close();
+
+            return true;
+        }
+
         #endregion
+
+        #endregion
+
     }
 }

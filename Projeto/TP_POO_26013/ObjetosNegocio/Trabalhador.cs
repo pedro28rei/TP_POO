@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Pessoas
+namespace ObjetosNegocio
 {
     /// <summary>
     /// Classe Trabalhador, que herda a classe Pessoa

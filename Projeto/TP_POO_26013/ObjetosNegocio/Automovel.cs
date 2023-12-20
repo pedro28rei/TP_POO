@@ -10,7 +10,7 @@
 
 using System;
 
-namespace Automoveis
+namespace ObjetosNegocio
 {
     /// <summary>
     /// Classe Automóvel 

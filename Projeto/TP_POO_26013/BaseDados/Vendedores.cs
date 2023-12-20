@@ -8,17 +8,22 @@
 * 
 */
 
+using ObjetosNegocio;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+
 namespace BaseDados
 {
     /// <summary>
-    /// Classe vendedores que contem vários  vendedores
+    /// Classe Vendedores que vai conter uma lista que é responsãvel por armazenar os vendedores
     /// </summary>
     public class Vendedores
     {
         #region ATRIBUTOS
 
-        public const int MAXVENDEDORES = 100;
-        private Vendedor[] listaVendedores;
+
+        private static List<Vendedor> listaVendedores;
 
 
         #endregion
@@ -28,36 +33,33 @@ namespace BaseDados
         #region CONSTRUTORES
 
         /// <summary>
-        /// Construtor por omissão que cria lista de vendedores, sem parâmetros definidos
+        /// Construtor que inicializa a lista de vendedores
         /// </summary>
-        public Vendedores()
+        static Vendedores()
         {
-            listaVendedores = new Vendedor[MAXVENDEDORES];
+            listaVendedores = new List<Vendedor>();
         }
 
 
         /// <summary>
-        /// Construtor por omissão que cria lista de clientes, com parâmetros definidos
+        /// Construtor por omissão 
         /// </summary>
-        /// <param name="MAXCLIENTES"></param>
-        /// <param name="listaClientes"></param>
-        public Vendedores(int MAXVENDEDORES, Vendedor[] listaVendedores)
+        public Vendedores()
         {
-            this.listaVendedores = listaVendedores;
         }
 
 
         #endregion
 
+
         #region PROPRIEDADES
 
         /// <summary>
-        /// Propriedade de leitura que fornece uma copia do array vendedor
+        /// Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém
         /// </summary>
-        public Cliente[] ListaVendedores
+        public List<Vendedor> ObterLista
         {
-
-            get { return (Cliente[])listaVendedores.Clone(); }
+            get { return listaVendedores; }
         }
 
 
@@ -76,6 +78,95 @@ namespace BaseDados
         }
 
         #endregion
+
+
+        #region OUTROSMETODOS
+
+        /// <summary>
+        /// Método que adiciona um vendedor na lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="vendedor"></param>
+        /// <returns></returns>
+        public static bool AdicionarVendedor(Vendedor vendedor)
+        {
+            foreach (Vendedor c in listaVendedores)
+            {
+                if (c.Equals(vendedor)) { return false; }
+            }
+
+            listaVendedores.Add(vendedor);
+
+            return true;
+        }
+
+        /// <summary>
+        /// Método que remove um vendedor da lista estática, retorna true caso seja bem sucedida e false caso contrário.
+        /// </summary>
+        /// <param name="vendedor"></param>
+        /// <returns></returns>
+        public static bool RemoverVendedor(Vendedor vendedor)
+        {
+            foreach (Vendedor c in listaVendedores)
+            {
+                if (c.Equals(vendedor)) { listaVendedores.Remove(vendedor); return true; }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Método que ordena a lista pelo número de vendedores de forma crescente
+        /// </summary>
+        /// <param name="vendedor"></param>
+        /// <returns></returns>
+        public static bool OrdenarVendedor()
+        {
+            listaVendedores.Sort();
+            return true;
+        }
+
+        /// <summary>
+        /// Método que lê um ficheiro em binário, com a informação dos Vendedores
+        /// </summary>
+        /// <returns></returns>
+        public static List<Vendedor> LerFicheiroVendedores()
+        {
+
+            List<Vendedor> aux = new List<Vendedor>();
+
+            FileStream fs = File.Open("Vendedores.bin", FileMode.Open, FileAccess.ReadWrite);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            aux = (List<Vendedor>)bf.Deserialize(fs);
+
+
+            fs.Close();
+
+            return aux;
+
+        }
+
+        /// <summary>
+        /// Método que guarda num ficheiro em binário, a informação dos Vendedores
+        /// </summary>
+        /// <returns></returns>
+        public static bool GuardarFicheiroVendedores()
+        {
+
+            FileStream fs = File.Open("Vendedores.bin", FileMode.Create, FileAccess.ReadWrite);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            bf.Serialize(fs, listaVendedores);
+
+            fs.Close();
+
+            return true;
+        }
+
+        #endregion
+
 
         #endregion
     }

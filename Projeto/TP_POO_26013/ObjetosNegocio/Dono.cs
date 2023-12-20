@@ -8,7 +8,7 @@
 * 
 */
 
-namespace Pessoas
+namespace ObjetosNegocio
 {
     /// <summary>
     /// Classe Dono, que herda a classe Pessoa

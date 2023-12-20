@@ -1,0 +1,9 @@
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\BaseDados\obj\Debug\BaseDados.csproj.AssemblyReference.cache
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\BaseDados\obj\Debug\BaseDados.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\BaseDados\bin\Debug\BaseDados.dll
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\BaseDados\bin\Debug\BaseDados.pdb
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\BaseDados\bin\Debug\ObjetosNegocio.dll
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\BaseDados\bin\Debug\ObjetosNegocio.pdb
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\BaseDados\obj\Debug\BaseDados.csproj.CopyComplete
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\BaseDados\obj\Debug\BaseDados.dll
+C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\BaseDados\obj\Debug\BaseDados.pdb
