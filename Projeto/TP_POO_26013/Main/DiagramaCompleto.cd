@@ -60,12 +60,5 @@
     <Position X="11.5" Y="0.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
-  <Class Name="Automoveis.Motas" Collapsed="true">
-    <Position X="13" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Motas.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

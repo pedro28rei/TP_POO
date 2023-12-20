@@ -1,25 +1,26 @@
 ﻿/*
-* Descrição: Realização da classe Carros
+* Descrição: Elaboração da classe Motas
 * Nome: Pedro Rei
 * Contacto: pedro28rei@gmail.com
-* Data: 08/11/2023
+* Data: 15/11/2023
 * LESI - POO
 * 
 * 
 */
 
-namespace Automoveis
+namespace BaseDados
 {
     /// <summary>
-    /// Classe Carros
+    /// Classe Motas, que contém varios objetos do tipo Mota
     /// </summary>
-    public class Carros
+    public class Motas
     {
+
         #region ATRIBUTOS
 
-        public const int MAXCARROS = 2000;
-        private Carro[] listaCarros;
 
+        public const int MAXMOTAS = 2000;
+        private Mota[] listaMotas;
 
         #endregion
 
@@ -29,22 +30,22 @@ namespace Automoveis
         #region CONSTRUTORES
 
         /// <summary>
-        /// Construtor por omissão que cria lista de carros, sem parâmetros definidos
+        /// Construtor por omissão que cria lista de motas, sem parâmetros definidos
         /// </summary>
-        public Carros()
+        public Motas()
         {
-            listaCarros = new Carro[MAXCARROS];
+            listaMotas = new Mota[MAXMOTAS];
         }
 
 
         /// <summary>
-        /// Construtor por omissão que cria lista de carros, com parâmetros definidos
+        /// Construtor por omissão que cria lista de motas, com parâmetros definidos
         /// </summary>
         /// <param name="MAXCLIENTES"></param>
         /// <param name="listaClientes"></param>
-        public Carros(int MAXCARROS, Carro[] listaCarros)
+        public Motas(int MAXMOTAS, Mota[] listaMotas)
         {
-            this.listaCarros = listaCarros;
+            this.listaMotas = listaMotas;
         }
 
 
@@ -53,14 +54,13 @@ namespace Automoveis
         #region PROPRIEDADES
 
         /// <summary>
-        /// Propriedade de leitura que fornece uma copia do array carro
+        /// Propriedade de leitura que fornece uma copia do array mota
         /// </summary>
-        public Carro[] ListaClientes
+        public Mota[] ListaMotas
         {
 
-            get { return (Carro[])listaCarros.Clone(); }
+            get { return (Mota[])listaMotas.Clone(); }
         }
-
 
         #endregion
 
@@ -68,7 +68,7 @@ namespace Automoveis
         #region OVERRIDES
 
         /// <summary>
-        /// Override ToString da classe Carros
+        /// Override ToString da classe Motas
         /// </summary>
         /// <returns></returns>
         public override string ToString()

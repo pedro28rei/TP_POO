@@ -8,7 +8,7 @@
 * 
 */
 
-namespace Pessoas
+namespace BaseDados
 {
     /// <summary>
     /// Classe vendedores que contem vários  vendedores

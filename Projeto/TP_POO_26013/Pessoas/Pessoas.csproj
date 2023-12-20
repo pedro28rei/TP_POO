@@ -42,17 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrador.cs" />
-    <Compile Include="Administradores.cs" />
     <Compile Include="Cliente.cs" />
-    <Compile Include="Clientes.cs" />
     <Compile Include="Dono.cs" />
     <Compile Include="Limpador.cs" />
-    <Compile Include="Limpadores.cs" />
     <Compile Include="Vendedor.cs" />
     <Compile Include="Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Trabalhador.cs" />
-    <Compile Include="Vendedores.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

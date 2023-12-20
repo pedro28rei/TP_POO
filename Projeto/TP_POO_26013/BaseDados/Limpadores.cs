@@ -9,7 +9,7 @@
 */
 
 
-namespace Pessoas
+namespace BaseDados
 {
     /// <summary>
     /// Classe Limpadores que vai conter vários limpadores

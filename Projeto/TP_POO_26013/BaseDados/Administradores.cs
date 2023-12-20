@@ -8,7 +8,7 @@
 * 
 */
 
-namespace Pessoas
+namespace BaseDados
 {
     /// <summary>
     /// Classe Administradores quye contém vários administradores
