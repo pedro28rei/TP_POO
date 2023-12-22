@@ -9,6 +9,7 @@
 */
 
 using ObjetosNegocio;
+using RegrasNegocio;
 using System;
 
 namespace Main
