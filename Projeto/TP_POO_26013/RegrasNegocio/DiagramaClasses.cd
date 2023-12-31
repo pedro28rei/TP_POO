@@ -1,67 +1,71 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="BaseDados.Administradores" Collapsed="true">
-    <Position X="5.75" Y="6.5" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="BaseDados.Carros" Collapsed="true">
-    <Position X="10.25" Y="3.75" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="BaseDados.Clientes" Collapsed="true">
-    <Position X="7.25" Y="3.75" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="BaseDados.Limpadores" Collapsed="true">
-    <Position X="0.75" Y="6.5" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="BaseDados.Motas" Collapsed="true">
-    <Position X="12.75" Y="3.75" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="BaseDados.Vendedores" Collapsed="true">
-    <Position X="3.25" Y="6.5" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="ObjetosNegocio.Carro" Collapsed="true">
-    <Position X="10" Y="3" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="ObjetosNegocio.Mota" Collapsed="true">
-    <Position X="13" Y="3" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="ObjetosNegocio.Automovel" Collapsed="true">
-    <Position X="11.5" Y="1" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="ObjetosNegocio.Pessoa" Collapsed="true">
-    <Position X="5.25" Y="1" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="ObjetosNegocio.Trabalhador" Collapsed="true">
-    <Position X="3" Y="3" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="ObjetosNegocio.Vendedor" Collapsed="true">
-    <Position X="3" Y="5.75" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="ObjetosNegocio.Limpador" Collapsed="true">
-    <Position X="0.5" Y="5.75" Width="1.5" />
-    <TypeIdentifier />
-  </Class>
-  <Class Name="ObjetosNegocio.Cliente" Collapsed="true">
-    <Position X="7.5" Y="3" Width="1.5" />
+  <Class Name="ObjetosNegocio.Administrador" Collapsed="true">
+    <Position X="5.5" Y="5.75" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="ObjetosNegocio.Dono" Collapsed="true">
     <Position X="5.25" Y="3" Width="1.5" />
     <TypeIdentifier />
   </Class>
-  <Class Name="ObjetosNegocio.Administrador" Collapsed="true">
-    <Position X="5.5" Y="5.75" Width="1.5" />
+  <Class Name="ObjetosNegocio.Cliente" Collapsed="true">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ObjetosNegocio.Limpador" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ObjetosNegocio.Vendedor" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ObjetosNegocio.Trabalhador" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ObjetosNegocio.Pessoa" Collapsed="true">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ObjetosNegocio.Automovel" Collapsed="true">
+    <Position X="11.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ObjetosNegocio.Mota" Collapsed="true">
+    <Position X="13" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ObjetosNegocio.Carro" Collapsed="true">
+    <Position X="10" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ObjetosNegocio.Venda" Collapsed="true">
+    <Position X="8.25" Y="1" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="BaseDados.Vendedores" Collapsed="true">
+    <Position X="3.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="BaseDados.Motas" Collapsed="true">
+    <Position X="12.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="BaseDados.Limpadores" Collapsed="true">
+    <Position X="0.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="BaseDados.Clientes" Collapsed="true">
+    <Position X="7.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="BaseDados.Carros" Collapsed="true">
+    <Position X="10.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="BaseDados.Administradores" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="9" />
