@@ -32,6 +32,7 @@ namespace Main
             Regras.LerFicheiroLimpadoresBD();
 
 
+
             //Criação de objetos novos das várias classes existentes
             Carro c1 = new Carro();
             Mota m1 = new Mota();
@@ -39,6 +40,7 @@ namespace Main
             Vendedor v1 = new Vendedor();
             Administrador admin1 = new Administrador();
             Limpador limp1 = new Limpador();
+
 
 
             bool aux; // variável auxiliar
@@ -66,6 +68,7 @@ namespace Main
             Regras.OrdenarVendedorBD();
             Regras.OrdenarAdministradorBD();
             Regras.OrdenarLimpadoresBD();
+
 
 
             //Execução dos métodos que permitem gravar os dados dos Automóveis nos respetivos ficheiros
