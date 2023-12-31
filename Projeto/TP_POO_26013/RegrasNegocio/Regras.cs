@@ -5,17 +5,16 @@
 * Data: 27/12/2023
 * LESI - POO
 * 
-* 
 */
 
-using ObjetosNegocio;
 using BaseDados;
-using System.Collections.Generic;
+using ObjetosNegocio;
+
 
 namespace RegrasNegocio
 {
     /// <summary>
-    /// Classe onde sáo definidas as regras de negócio  que permitem o contacto entre o backend e o frontend
+    /// Classe onde sáo definidas as regras de negócio que permitem o contacto entre o backend e o frontend
     /// </summary> 
     public class Regras
     {
@@ -23,7 +22,7 @@ namespace RegrasNegocio
         #region REGRAS CARROS
 
         /// <summary>
-        /// Metodo que define as regras para poder adicionar um carro na lista, e retorna true em com sucesso ou false caso o oposto
+        /// Método que define as regras para poder adicionar um carro na lista, e retorna true em com sucesso ou false caso o oposto
         /// </summary>
         /// <param name="carro"></param>
         /// <returns></returns>
@@ -35,7 +34,7 @@ namespace RegrasNegocio
         }
 
         /// <summary>
-        /// Metodo que define as regras para poder remover um carro da lista, e retorna true em caso de sucesso ou false caso o oposto
+        /// Método que define as regras para poder remover um carro da lista, e retorna true em caso de sucesso ou false caso o oposto
         /// </summary>
         /// <param name="carro"></param>
         /// <returns></returns>
@@ -45,7 +44,7 @@ namespace RegrasNegocio
         }
 
         /// <summary>
-        /// Metodo que define as regras para poder ordenar a lista de carros, e retorna true em caso de sucesso e false caso o oposto
+        /// Método que define as regras para poder ordenar a lista de carros, e retorna true em caso de sucesso e false caso o oposto
         /// </summary>
         /// <returns></returns>
         public static bool OrdernarCarroBD()
@@ -54,7 +53,7 @@ namespace RegrasNegocio
         }
 
         /// <summary>
-        /// Metodo que define as regras para poder ler o ficheiro, e retorna a lista em caso de sucesso
+        /// Método que define as regras para poder ler o ficheiro, e retorna true em caso de sucesso e  false em caso do oposto
         /// </summary>
         /// <returns></returns>
         public static bool LerFicheiroCarrosBD()
@@ -63,7 +62,7 @@ namespace RegrasNegocio
         }
 
         /// <summary>
-        /// Metodo que define as regras para poder guardar o ficheiro, e retorna true em caso de sucesso e false caso o oposto
+        /// Método que define as regras para poder guardar o ficheiro, e retorna true em caso de sucesso e false caso o oposto
         /// </summary>
         /// <returns></returns>
         public static bool GuardarFicheiroCarrosBD()
@@ -77,18 +76,40 @@ namespace RegrasNegocio
         #region REGRAS MOTAS
 
         /// <summary>
-        /// Classe que define as regras para poder adicionar uma mota a lista
+        /// Método que define as regras para poder adicionar uma Mota á lista, e retorna true em caso de sucesso ou false caso o oposto
         /// </summary>
         /// <param name="mota"></param>
         /// <returns></returns>
         public static bool AdicionarMotaBD(Mota mota)
         {
-            if (mota.CodigoMota == 0 || mota.Matricula == string.Empty) return false;
+            if (mota.CodigoMota <= 0 || mota.CodigoAutomovel <= 0 || mota.Matricula == string.Empty || mota.DataFabrico == string.Empty
+        || mota.Potencia < 15 || mota.Preco < 100) return false;
             else return Motas.AdicionarMota(mota);
         }
 
+
         /// <summary>
-        /// Metodo que define as regras para poder ler o ficheiro, e retorna a lista em caso de sucesso
+        /// Método que define as regras para poder remover uma Mota da lista, e retorna true em caso de sucesso ou false caso o oposto
+        /// </summary>
+        /// <param name="mota"></param>
+        /// <returns></returns>
+        public static bool RemoverMotaBD(Mota mota)
+        {
+            return Motas.RemoverMota(mota);
+        }
+
+        /// <summary>
+        /// Metodo que define as regras para poder ordenar a lista de Motas, e retorna true em caso de sucesso e false caso o oposto
+        /// </summary>
+        /// <returns></returns>
+        public static bool OrdernarMotasBD()
+        {
+            return Motas.OrdenarMotas();
+        }
+
+
+        /// <summary>
+        /// Metodo que define as regras para poder ler o ficheiro com os dados das Motas, e retorna true em caso de sucesso e false caso o oposto
         /// </summary>
         /// <returns></returns>
         public static bool LerFicheiroMotasBD()
@@ -97,7 +118,7 @@ namespace RegrasNegocio
         }
 
         /// <summary>
-        /// Metodo que define as regras para poder guardar o ficheiro, e retorna true em caso de sucesso e false caso o oposto
+        /// Metodo que define as regras para poder guardar o ficheiro com os dados das Motas, e retorna true em caso de sucesso e false caso o oposto
         /// </summary>
         /// <returns></returns>
         public static bool GuardarFicheiroMotasBD()

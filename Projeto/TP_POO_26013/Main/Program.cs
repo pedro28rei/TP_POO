@@ -5,7 +5,6 @@
 * Data: 1/11/2023
 * LESI - POO
 * 
-* 
 */
 
 using ObjetosNegocio;
@@ -15,7 +14,7 @@ using RegrasNegocio;
 namespace Main
 {
     /// <summary>
-    /// A classe que vai ser a main onde se encontra o programa desenvolvido
+    /// A classe Main onde se encontra o programa desenvolvido
     /// </summary>
     internal class Program
     {
@@ -33,7 +32,7 @@ namespace Main
             Regras.LerFicheiroLimpadoresBD();
 
 
-            //Criação de objetos das várias classes existentes
+            //Criação de objetos novos das várias classes existentes
             Carro c1 = new Carro();
             Mota m1 = new Mota();
             Cliente cl1 = new Cliente();
@@ -42,17 +41,31 @@ namespace Main
             Limpador limp1 = new Limpador();
 
 
-            bool aux;
+            bool aux; // variável auxiliar
 
-            //Execução dos métodos que permitem adicionar um objeto á respetiva lista que os armazena e aos seus dados
+            //Execução dos métodos que permitem adicionar um objeto á respetiva lista que os armazena, e aos seus dados
             aux = Regras.AdicionarCarroBD(c1);
+            aux = Regras.AdicionarMotaBD(m1);
+            aux = Regras.AdicionarClienteBD(cl1);
+            aux = Regras.AdicionarVendedorBD(v1);
+            aux = Regras.AdicionarAdministrador(admin1);
+            aux = Regras.AdicionarLimpadores(limp1);
 
-            //Execução dos métodos que permitem remover um objeto á respetiva lista que os armazena e aos seus dados
+            //Execução dos métodos que permitem remover um objeto á respetiva lista que os armazena, e aos seus dados
             aux = Regras.RemoverCarroBD(c1);
+            aux = Regras.RemoverMotaBD(m1);
+            aux = Regras.RemoverCliente(cl1);
+            aux = Regras.RemoverVendedor(v1);
+            aux = Regras.RemoverAdministrador(admin1);
+            aux = Regras.RemoverLimpador(limp1);
 
             //Execução dos métodos que permitem ordenar as listas, neste caso por ordem crescente dos respetivos códigos de identificação
             Regras.OrdernarCarroBD();
-
+            Regras.OrdenarMotasBD();
+            Regras.OrdenarClientesBD();
+            Regras.OrdenarVendedorBD();
+            Regras.OrdenarAdministradores();
+            Regras.OrdenarLimpadores();
 
 
             //Execução dos métodos que permitem gravar os dados dos Automóveis nos respetivos ficheiros
