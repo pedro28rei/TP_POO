@@ -129,21 +129,19 @@ namespace BaseDados
         /// Método que lê um ficheiro em binário, com a informação dos Limpadores
         /// </summary>
         /// <returns></returns>
-        public static List<Limpador> LerFicheiroLimpadores()
+        public static bool LerFicheiroLimpadores()
         {
-
-            List<Limpador> aux = new List<Limpador>();
 
             FileStream fs = File.Open("Limpadores.bin", FileMode.Open, FileAccess.ReadWrite);
 
             BinaryFormatter bf = new BinaryFormatter();
 
-            aux = (List<Limpador>)bf.Deserialize(fs);
+            listaLimpadores = (List<Limpador>)bf.Deserialize(fs);
 
 
             fs.Close();
 
-            return aux;
+            return true;
 
         }
 
@@ -151,7 +149,7 @@ namespace BaseDados
         /// Método que guarda num ficheiro em binário, a informação dos Clientes
         /// </summary>
         /// <returns></returns>
-        public static bool GuardarFicheiroClientes()
+        public static bool GuardarFicheiroLimpadores()
         {
 
             FileStream fs = File.Open("Limpadores.bin", FileMode.Create, FileAccess.ReadWrite);

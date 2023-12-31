@@ -129,21 +129,19 @@ namespace BaseDados
         /// Método que lê um ficheiro em binário, com a informação dos Vendedores
         /// </summary>
         /// <returns></returns>
-        public static List<Vendedor> LerFicheiroVendedores()
+        public static bool LerFicheiroVendedores()
         {
-
-            List<Vendedor> aux = new List<Vendedor>();
 
             FileStream fs = File.Open("Vendedores.bin", FileMode.Open, FileAccess.ReadWrite);
 
             BinaryFormatter bf = new BinaryFormatter();
 
-            aux = (List<Vendedor>)bf.Deserialize(fs);
+            listaVendedores = (List<Vendedor>)bf.Deserialize(fs);
 
 
             fs.Close();
 
-            return aux;
+            return true;
 
         }
 

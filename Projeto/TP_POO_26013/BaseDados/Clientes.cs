@@ -118,21 +118,19 @@ namespace BaseDados
         /// Método que lê um ficheiro em binário, com a informação dos Clientes
         /// </summary>
         /// <returns></returns>
-        public static List<Cliente> LerFicheiroClientes()
+        public static bool LerFicheiroClientes()
         {
         
-            List<Cliente> aux = new List<Cliente>();
-
                 FileStream fs = File.Open("Clientes.bin", FileMode.Open, FileAccess.ReadWrite);
 
                 BinaryFormatter bf = new BinaryFormatter();
 
-                aux = (List<Cliente>)bf.Deserialize(fs);
+                listaClientes = (List<Cliente>)bf.Deserialize(fs);
 
         
             fs.Close();
 
-            return aux;
+            return true;
 
         }
 

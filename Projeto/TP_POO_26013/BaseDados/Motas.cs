@@ -132,7 +132,7 @@ namespace BaseDados
         /// Método que lê um ficheiro em binário, com a informação das Motas
         /// </summary>
         /// <returns></returns>
-        public static List<Mota> LerFicheiroMotas()
+        public static bool LerFicheiroMotas()
         {
 
             List<Mota> aux = new List<Mota>();
@@ -141,12 +141,12 @@ namespace BaseDados
 
             BinaryFormatter bf = new BinaryFormatter();
 
-            aux = (List<Mota>)bf.Deserialize(fs);
+            listaMotas = (List<Mota>)bf.Deserialize(fs);
 
 
             fs.Close();
 
-            return aux;
+            return true;
 
         }
 

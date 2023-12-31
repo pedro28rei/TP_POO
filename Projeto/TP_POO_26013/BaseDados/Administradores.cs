@@ -113,21 +113,20 @@ namespace BaseDados
         /// Método que lê um ficheiro em binário, com a informação dos Administradores
         /// </summary>
         /// <returns></returns>
-        public static List<Administrador> LerFicheiroClientes()
+        public static bool LerFicheiroAdministradores()
         {
 
-            List<Administrador> aux = new List<Administrador>();
 
             FileStream fs = File.Open("Administradores.bin", FileMode.Open, FileAccess.ReadWrite);
 
             BinaryFormatter bf = new BinaryFormatter();
 
-            aux = (List<Administrador>)bf.Deserialize(fs);
+            listaAdministradores = (List<Administrador>)bf.Deserialize(fs);
 
 
             fs.Close();
 
-            return aux;
+            return true;
 
         }
 

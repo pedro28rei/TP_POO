@@ -103,7 +103,7 @@ namespace BaseDados
         /// </summary>
         /// <param name="cliente"></param>
         /// <returns></returns>
-        public static bool RemoverCarrro(Carro carro)
+        public static bool RemoverCarro(Carro carro)
         {
             foreach (Carro c in listaCarros)
             {
@@ -127,7 +127,7 @@ namespace BaseDados
         /// Método que lê um ficheiro em binário, com a informação dos Carros
         /// </summary>
         /// <returns></returns>
-        public static List<Carro> LerFicheiroCarros()
+        public static bool LerFicheiroCarros()
         {
 
             List<Carro> aux = new List<Carro>();
@@ -136,12 +136,12 @@ namespace BaseDados
 
             BinaryFormatter bf = new BinaryFormatter();
 
-            aux = (List<Carro>)bf.Deserialize(fs);
+            listaCarros = (List<Carro>)bf.Deserialize(fs);
 
 
             fs.Close();
 
-            return aux;
+            return true;
 
         }
 
