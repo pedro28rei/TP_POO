@@ -102,7 +102,7 @@ namespace RegrasNegocio
         /// Metodo que define as regras para poder ordenar a lista de Motas, e retorna true em caso de sucesso e false caso o oposto
         /// </summary>
         /// <returns></returns>
-        public static bool OrdernarMotasBD()
+        public static bool OrdenarMotasBD()
         {
             return Motas.OrdenarMotas();
         }
@@ -130,6 +130,36 @@ namespace RegrasNegocio
 
         #region REGRAS CLIENTES
 
+        /// <summary>
+        /// Método que define as regras para poder adicionar um Cliente na lista, e retorna true em com sucesso ou false caso o oposto
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
+        public static bool AdicionarClienteBD(Cliente cliente)
+        {
+            if (cliente.CodigoCliente <= 0 || cliente.Nif <= 0 || cliente.NumeroContribuinte < 0 || cliente.Idade < 18 ||
+        cliente.Nome == string.Empty || cliente.Saldo >= 0 ) return false;
+            else return Clientes.AdicionarCliente(cliente);
+        }
+
+        /// <summary>
+        /// Método que define as regras para poder remover um Cliente da lista, e retorna true em caso de sucesso ou false caso o oposto
+        /// </summary>
+        /// <param name="cliente"></param>
+        /// <returns></returns>
+        public static bool RemoverClienteBD(Cliente cliente)
+        {
+            return Clientes.RemoverCliente(cliente);
+        }
+
+        /// <summary>
+        /// Método que define as regras para poder ordenar a lista de Clientes, e retorna true em caso de sucesso e false caso o oposto
+        /// </summary>
+        /// <returns></returns>
+        public static bool OrdenarClienteBD()
+        {
+            return Clientes.OrdenarCliente();
+        }
 
         /// <summary>
         /// Metodo que define as regras para poder ler o ficheiro com os dados dos Clientes, e retorna a lista em caso de sucesso
@@ -155,6 +185,37 @@ namespace RegrasNegocio
         #region REGRAS VENDEDORES
 
         /// <summary>
+        /// Método que define as regras para poder adicionar um Vendedor na lista, e retorna true em com sucesso ou false caso o oposto
+        /// </summary>
+        /// <param name="vendedor"></param>
+        /// <returns></returns>
+        public static bool AdicionarVendedorBD(Vendedor vendedor)
+        {
+            if (vendedor.IdVendedor <= 0 || vendedor.CodigoTrabalhador <= 0 || vendedor.Salario < 820 || vendedor.Idade < 18 ||
+        vendedor.Nome == string.Empty || vendedor.AnosServico < 0 || vendedor.NivelCargo <0) return false;
+            else return Vendedores.AdicionarVendedor(vendedor);
+        }
+
+        /// <summary>
+        /// Método que define as regras para poder remover um Vendedor da lista, e retorna true em caso de sucesso ou false caso o oposto
+        /// </summary>
+        /// <param name="vendedor"></param>
+        /// <returns></returns>
+        public static bool RemoverVendedorBD(Vendedor vendedor)
+        {
+            return Vendedores.RemoverVendedor(vendedor);
+        }
+
+        /// <summary>
+        /// Método que define as regras para poder ordenar a lista de Vendedores, e retorna true em caso de sucesso e false caso o oposto
+        /// </summary>
+        /// <returns></returns>
+        public static bool OrdenarVendedorBD()
+        {
+            return Vendedores.OrdenarVendedor();
+        }
+
+        /// <summary>
         /// Metodo que define as regras para poder ler o ficheiro com os dados dos Vendedores, e retorna a lista em caso de sucesso
         /// </summary>
         /// <returns></returns>
@@ -176,6 +237,36 @@ namespace RegrasNegocio
 
         #region REGRAS ADMINISTRADORES
 
+        /// <summary>
+        /// Método que define as regras para poder adicionar um Administrador na lista, e retorna true em com sucesso ou false caso o oposto
+        /// </summary>
+        /// <param name="administrador"></param>
+        /// <returns></returns>
+        public static bool AdicionarAdministradorBD(Administrador administrador)
+        {
+            if (administrador.IdAdmin <= 0 || administrador.CodigoTrabalhador <= 0 || administrador.Salario < 820 || administrador.Idade < 18 ||
+        administrador.Nome == string.Empty || administrador.AnosServico < 0 || administrador.NivelCargo < 0) return false;
+            else return Administradores.AdicionarAdministrador(administrador);
+        }
+
+        /// <summary>
+        /// Método que define as regras para poder remover um Administrador da lista, e retorna true em caso de sucesso ou false caso o oposto
+        /// </summary>
+        /// <param name="administrador"></param>
+        /// <returns></returns>
+        public static bool RemoverAdministradorBD(Administrador administrador)
+        {
+            return Administradores.RemoverAdministrador(administrador);
+        }
+
+        /// <summary>
+        /// Método que define as regras para poder ordenar a lista de Administradores, e retorna true em caso de sucesso e false caso o oposto
+        /// </summary>
+        /// <returns></returns>
+        public static bool OrdenarAdministradorBD()
+        {
+            return Administradores.OrdenarAdministrador();
+        }
 
         /// <summary>
         /// Metodo que define as regras para poder ler o ficheiro com os dados dos Administradores, e retorna a lista em caso de sucesso
@@ -197,8 +288,38 @@ namespace RegrasNegocio
 
         #endregion
 
-        #region REGRAS VENDEDORES
+        #region REGRAS LIMPADORES
 
+        /// <summary>
+        /// Método que define as regras para poder adicionar um Administrador na lista, e retorna true em com sucesso ou false caso o oposto
+        /// </summary>
+        /// <param name="limpador"></param>
+        /// <returns></returns>
+        public static bool AdicionarLimpadorBD(Limpador limpador)
+        {
+            if (limpador.IdLimpador <= 0 || limpador.CodigoTrabalhador <= 0 || limpador.Salario < 820 || limpador.Idade < 18 ||
+        limpador.Nome == string.Empty || limpador.AnosServico < 0 || limpador.NivelCargo < 0) return false;
+            else return Limpadores.AdicionarLimpador(limpador);
+        }
+
+        /// <summary>
+        /// Método que define as regras para poder remover um Administrador da lista, e retorna true em caso de sucesso ou false caso o oposto
+        /// </summary>
+        /// <param name="limpador"></param>
+        /// <returns></returns>
+        public static bool RemoverLimpadorBD(Limpador limpador)
+        {
+            return Limpadores.RemoverLimpador(limpador);
+        }
+
+        /// <summary>
+        /// Método que define as regras para poder ordenar a lista de Limpadores, e retorna true em caso de sucesso e false caso o oposto
+        /// </summary>
+        /// <returns></returns>
+        public static bool OrdenarLimpadoresBD()
+        {
+            return Limpadores.OrdenarLimpadores();
+        }
 
         /// <summary>
         /// Metodo que define as regras para poder ler o ficheiro com os dados dos Limpadores, e retorna a lista em caso de sucesso
@@ -220,4 +341,4 @@ namespace RegrasNegocio
         #endregion
 
     }
-    }
+}

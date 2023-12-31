@@ -48,24 +48,24 @@ namespace Main
             aux = Regras.AdicionarMotaBD(m1);
             aux = Regras.AdicionarClienteBD(cl1);
             aux = Regras.AdicionarVendedorBD(v1);
-            aux = Regras.AdicionarAdministrador(admin1);
-            aux = Regras.AdicionarLimpadores(limp1);
+            aux = Regras.AdicionarAdministradorBD(admin1);
+            aux = Regras.AdicionarLimpadorBD(limp1);
 
             //Execução dos métodos que permitem remover um objeto á respetiva lista que os armazena, e aos seus dados
             aux = Regras.RemoverCarroBD(c1);
             aux = Regras.RemoverMotaBD(m1);
-            aux = Regras.RemoverCliente(cl1);
-            aux = Regras.RemoverVendedor(v1);
-            aux = Regras.RemoverAdministrador(admin1);
-            aux = Regras.RemoverLimpador(limp1);
+            aux = Regras.RemoverClienteBD(cl1);
+            aux = Regras.RemoverVendedorBD(v1);
+            aux = Regras.RemoverAdministradorBD(admin1);
+            aux = Regras.RemoverLimpadorBD(limp1);
 
             //Execução dos métodos que permitem ordenar as listas, neste caso por ordem crescente dos respetivos códigos de identificação
             Regras.OrdernarCarroBD();
             Regras.OrdenarMotasBD();
-            Regras.OrdenarClientesBD();
+            Regras.OrdenarClienteBD();
             Regras.OrdenarVendedorBD();
-            Regras.OrdenarAdministradores();
-            Regras.OrdenarLimpadores();
+            Regras.OrdenarAdministradorBD();
+            Regras.OrdenarLimpadoresBD();
 
 
             //Execução dos métodos que permitem gravar os dados dos Automóveis nos respetivos ficheiros

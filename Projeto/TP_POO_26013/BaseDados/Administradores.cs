@@ -89,7 +89,7 @@ namespace BaseDados
         /// </summary>
         /// <param name="administradores"></param>
         /// <returns></returns>
-        public static bool RemoverAdminisrador(Administrador administradores)
+        public static bool RemoverAdministrador(Administrador administradores)
         {
             foreach (Administrador c in listaAdministradores)
             {
@@ -103,7 +103,7 @@ namespace BaseDados
         /// Método que ordena a lista pelo número de administradores por forma crescente
         /// </summary>
         /// <returns></returns>
-        public static bool OrdenarCliente()
+        public static bool OrdenarAdministrador()
         {
             listaAdministradores.Sort();
             return true;
