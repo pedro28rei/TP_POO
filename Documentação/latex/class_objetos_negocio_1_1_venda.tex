@@ -1,0 +1,205 @@
+\doxysection{Objetos\+Negocio.\+Venda Class Reference}
+\label{class_objetos_negocio_1_1_venda}\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+
+
+Classe da venda de um automóvel.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Venda} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Venda} (int codigo\+Venda, float valor\+Venda, string data, int anos\+Garantia)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a venda. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Venda} p1, \textbf{ Venda} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Venda é igual ao outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Venda} p1, \textbf{ Venda} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Venda é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Codigo\+Venda}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do codigo de venda de uma venda. \end{DoxyCompactList}\item 
+float \textbf{ Valor\+Venda}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do Valor da Venda de um automóvel. \end{DoxyCompactList}\item 
+string \textbf{ Data}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da data de uma venda de um automóvel. \end{DoxyCompactList}\item 
+int \textbf{ Anos\+Garantia}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade dos anos de garantia de uma venda. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe da venda de um automóvel. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_objetos_negocio_1_1_venda_a32612a54e8b9cbb52f1c8d3e7427963f}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!Venda@{Venda}}
+\index{Venda@{Venda}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{Venda()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Venda.\+Venda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão sem parâmetros definidos. 
+
+\mbox{\label{class_objetos_negocio_1_1_venda_a87169b3cfb54594142ba6ee3b280f40d}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!Venda@{Venda}}
+\index{Venda@{Venda}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{Venda()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Venda.\+Venda (\begin{DoxyParamCaption}\item[{int}]{codigo\+Venda,  }\item[{float}]{valor\+Venda,  }\item[{string}]{data,  }\item[{int}]{anos\+Garantia }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão com parâmetros definidos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor\+Venda} & \\
+\hline
+{\em data} & \\
+\hline
+{\em anos\+Garantia} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_objetos_negocio_1_1_venda_aad08d7a2bfea4f9487f405a761c5173e}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!Equals@{Equals}}
+\index{Equals@{Equals}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{Equals()}
+{\footnotesize\ttfamily override bool Objetos\+Negocio.\+Venda.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Verificar se os dois objetos são do mesmo tipo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_venda_a49eaca12cbc71dfcfec9a61f24b5ecf3}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{GetHashCode()}
+{\footnotesize\ttfamily override int Objetos\+Negocio.\+Venda.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém um código hash para a venda. 
+
+\mbox{\label{class_objetos_negocio_1_1_venda_ade0970a6913e01dcf85e381e524e0163}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{operator"!=()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Venda.\+operator!= (\begin{DoxyParamCaption}\item[{\textbf{ Venda}}]{p1,  }\item[{\textbf{ Venda}}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Venda é diferente do outro objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_venda_a763bb530b49e49f008cde433825756dd}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!operator==@{operator==}}
+\index{operator==@{operator==}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{operator==()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Venda.\+operator== (\begin{DoxyParamCaption}\item[{\textbf{ Venda}}]{p1,  }\item[{\textbf{ Venda}}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Venda é igual ao outro objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_venda_a73b00a86272cf7fd8398571df4a91a3a}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!ToString@{ToString}}
+\index{ToString@{ToString}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Objetos\+Negocio.\+Venda.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Conversão do objeto numa string, mostrando os seus dados. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_objetos_negocio_1_1_venda_ae283fed69cbbc68b303070822634a355}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!AnosGarantia@{AnosGarantia}}
+\index{AnosGarantia@{AnosGarantia}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{AnosGarantia}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Venda.\+Anos\+Garantia\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade dos anos de garantia de uma venda. 
+
+\mbox{\label{class_objetos_negocio_1_1_venda_acc1e4e56f813faa032a63d86cfd1ac0a}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!CodigoVenda@{CodigoVenda}}
+\index{CodigoVenda@{CodigoVenda}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{CodigoVenda}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Venda.\+Codigo\+Venda\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do codigo de venda de uma venda. 
+
+\mbox{\label{class_objetos_negocio_1_1_venda_aba0028b0e0e91eb590f92f8d1dd3b9ee}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!Data@{Data}}
+\index{Data@{Data}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{Data}
+{\footnotesize\ttfamily string Objetos\+Negocio.\+Venda.\+Data\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade da data de uma venda de um automóvel. 
+
+\mbox{\label{class_objetos_negocio_1_1_venda_a787b407ee19ac15e3c32e68820fb382e}} 
+\index{ObjetosNegocio.Venda@{ObjetosNegocio.Venda}!ValorVenda@{ValorVenda}}
+\index{ValorVenda@{ValorVenda}!ObjetosNegocio.Venda@{ObjetosNegocio.Venda}}
+\doxysubsubsection{ValorVenda}
+{\footnotesize\ttfamily float Objetos\+Negocio.\+Venda.\+Valor\+Venda\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do Valor da Venda de um automóvel. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Venda.\+cs}\end{DoxyCompactItemize}

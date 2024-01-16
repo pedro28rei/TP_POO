@@ -1,0 +1,274 @@
+\doxysection{Objetos\+Negocio.\+Carro Class Reference}
+\label{class_objetos_negocio_1_1_carro}\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+
+
+Classe Carro.  
+
+
+Inheritance diagram for Objetos\+Negocio.\+Carro\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_objetos_negocio_1_1_carro}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Carro} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Carro,sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Carro} (int codigo\+Automovel, string data\+Fabrico, string marca, string modelo, float preco, string matricula, int codigo\+Carro, int cavalos, float consumo, string cor, int lugares)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Carro,com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para o carro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Automovel}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Automovel} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Automóvel,sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Automovel} (int codigo\+Automovel, string data\+Fabrico, string marca, string modelo, float preco, string matricula)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Automóvel, com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a automovel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Carro} c1, \textbf{ Carro} c2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Carro é igual ao outro objeto atráves do cógido. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Carro} a1, \textbf{ Carro} a2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Carro é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Automovel}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Automovel} a1, \textbf{ Automovel} a2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Automovel é igual do outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Automovel} a1, \textbf{ Automovel} a2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Automovel é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Codigo\+Carro}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do Codigo de um Carro. \end{DoxyCompactList}\item 
+int \textbf{ Cavalos}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade dos Cavalos de um Carro. \end{DoxyCompactList}\item 
+float \textbf{ Consumo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do Consumo de um Carro. \end{DoxyCompactList}\item 
+string \textbf{ Cor}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da cor de um Carro. \end{DoxyCompactList}\item 
+int \textbf{ Lugares}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade dos lugares de um Carro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties inherited from \textbf{ Objetos\+Negocio.\+Automovel}}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Codigo\+Automovel}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do codigo de um automovel. \end{DoxyCompactList}\item 
+string \textbf{ Data\+Fabrico}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da Data de Fabrico de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Marca}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da Marca de um automovel. \end{DoxyCompactList}\item 
+string \textbf{ Modelo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da Modelo de um Automovel. \end{DoxyCompactList}\item 
+float \textbf{ Preco}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do preco de um automovel. \end{DoxyCompactList}\item 
+string \textbf{ Matricula}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da matricula de um automovel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Carro. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_objetos_negocio_1_1_carro_a922b051117f6f99c0da65bc762c0317c}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!Carro@{Carro}}
+\index{Carro@{Carro}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{Carro()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Carro.\+Carro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria um Carro,sem parâmetros definidos. 
+
+\mbox{\label{class_objetos_negocio_1_1_carro_acea3f048cbc186a25d4d6c6c45155623}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!Carro@{Carro}}
+\index{Carro@{Carro}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{Carro()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Carro.\+Carro (\begin{DoxyParamCaption}\item[{int}]{codigo\+Automovel,  }\item[{string}]{data\+Fabrico,  }\item[{string}]{marca,  }\item[{string}]{modelo,  }\item[{float}]{preco,  }\item[{string}]{matricula,  }\item[{int}]{codigo\+Carro,  }\item[{int}]{cavalos,  }\item[{float}]{consumo,  }\item[{string}]{cor,  }\item[{int}]{lugares }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria um Carro,com parâmetros definidos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo\+Automovel} & \\
+\hline
+{\em data\+Fabrico} & \\
+\hline
+{\em marca} & \\
+\hline
+{\em modelo} & \\
+\hline
+{\em preco} & \\
+\hline
+{\em matricula} & \\
+\hline
+{\em codigo\+Carro} & \\
+\hline
+{\em cavalos} & \\
+\hline
+{\em consumo} & \\
+\hline
+{\em cor} & \\
+\hline
+{\em lugares} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_objetos_negocio_1_1_carro_a7206819160565d31b781e86346fb10d5}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!Equals@{Equals}}
+\index{Equals@{Equals}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{Equals()}
+{\footnotesize\ttfamily override bool Objetos\+Negocio.\+Carro.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Verificar se os dois objetos são do mesmo tipo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_carro_a5459fe7736ad70bf39561a2c709cdf37}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{GetHashCode()}
+{\footnotesize\ttfamily override int Objetos\+Negocio.\+Carro.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém um código hash para o carro. 
+
+\mbox{\label{class_objetos_negocio_1_1_carro_ad41ee1b2d232b7c0ba2328d5be4afda8}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{operator"!=()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Carro.\+operator!= (\begin{DoxyParamCaption}\item[{\textbf{ Carro}}]{a1,  }\item[{\textbf{ Carro}}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Carro é diferente do outro objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a1} & \\
+\hline
+{\em a2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_carro_a05015c7ceaee00cdeea91907961c0d31}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!operator==@{operator==}}
+\index{operator==@{operator==}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{operator==()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Carro.\+operator== (\begin{DoxyParamCaption}\item[{\textbf{ Carro}}]{c1,  }\item[{\textbf{ Carro}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Carro é igual ao outro objeto atráves do cógido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & \\
+\hline
+{\em c2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_carro_ad8087cffc25e4789c4d76ade472d8e1f}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!ToString@{ToString}}
+\index{ToString@{ToString}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Objetos\+Negocio.\+Carro.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Conversão do objeto numa string, mostrando os seus dados. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_objetos_negocio_1_1_carro_a13f4d8640ee8598bbc8345e837282d1c}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!Cavalos@{Cavalos}}
+\index{Cavalos@{Cavalos}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{Cavalos}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Carro.\+Cavalos\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade dos Cavalos de um Carro. 
+
+\mbox{\label{class_objetos_negocio_1_1_carro_acde9bb328ec80bb9d7bbe1f59c16ef1e}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!CodigoCarro@{CodigoCarro}}
+\index{CodigoCarro@{CodigoCarro}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{CodigoCarro}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Carro.\+Codigo\+Carro\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do Codigo de um Carro. 
+
+\mbox{\label{class_objetos_negocio_1_1_carro_a3277f80ff5ac632cfca8778927903b5e}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!Consumo@{Consumo}}
+\index{Consumo@{Consumo}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{Consumo}
+{\footnotesize\ttfamily float Objetos\+Negocio.\+Carro.\+Consumo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do Consumo de um Carro. 
+
+\mbox{\label{class_objetos_negocio_1_1_carro_ab7b26cdc5901a1c12fa8f3593e1461f1}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!Cor@{Cor}}
+\index{Cor@{Cor}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{Cor}
+{\footnotesize\ttfamily string Objetos\+Negocio.\+Carro.\+Cor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade da cor de um Carro. 
+
+\mbox{\label{class_objetos_negocio_1_1_carro_ae1fcf0854219f71061d63806c4394c61}} 
+\index{ObjetosNegocio.Carro@{ObjetosNegocio.Carro}!Lugares@{Lugares}}
+\index{Lugares@{Lugares}!ObjetosNegocio.Carro@{ObjetosNegocio.Carro}}
+\doxysubsubsection{Lugares}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Carro.\+Lugares\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade dos lugares de um Carro. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Carro.\+cs}\end{DoxyCompactItemize}

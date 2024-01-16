@@ -1,0 +1,259 @@
+\doxysection{Objetos\+Negocio.\+Cliente Class Reference}
+\label{class_objetos_negocio_1_1_cliente}\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+
+
+Classe Cliente, que herda a classe Pessoa.  
+
+
+Inheritance diagram for Objetos\+Negocio.\+Cliente\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_objetos_negocio_1_1_cliente}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Cliente} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Cliente, sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Cliente} (string nome\+Externo, int idade\+Externo, Date\+Time data\+Nascimento\+Externo, string sexo\+Externo, string morada\+Externo, int codigo\+Cliente, int nif, int numero\+Contribuinte, int contacto, string email, float saldo)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Cliente, parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a Cliente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pessoa} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Pessoa,sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Pessoa} (string nome, int idade, Date\+Time data\+Nascimento, string sexo, string morada)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Pessoa, com parâmetros definidos(nome, idade, data nascimento, sexo ,morada) \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Cliente} c1, \textbf{ Cliente} c2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Cliente é igual ao outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Cliente} c1, \textbf{ Cliente} c2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Pessoa} p1, \textbf{ Pessoa} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é igual ao outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Pessoa} p1, \textbf{ Pessoa} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Codigo\+Cliente}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do codigo Cliente de um Cliente. \end{DoxyCompactList}\item 
+int \textbf{ Nif}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade nif de um Cliente. \end{DoxyCompactList}\item 
+int \textbf{ Numero\+Contribuinte}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do codigo Cliente de um Cliente. \end{DoxyCompactList}\item 
+int \textbf{ Contacto}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do contacto de um Cliente. \end{DoxyCompactList}\item 
+string \textbf{ Email}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do email de um Cliente. \end{DoxyCompactList}\item 
+float \textbf{ Saldo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do saldo de um Cliente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+string \textbf{ Nome}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do nome de uma Pessoa. \end{DoxyCompactList}\item 
+int \textbf{ Idade}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da idade de uma Pessoa. \end{DoxyCompactList}\item 
+Date\+Time \textbf{ Data\+Nascimento}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da data\+Nascimento de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Sexo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do sexo de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Morada}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade da morada de uma pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Cliente, que herda a classe Pessoa. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_objetos_negocio_1_1_cliente_acbd3628316928332bf045ff95dfcd17e}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!Cliente@{Cliente}}
+\index{Cliente@{Cliente}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{Cliente()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Cliente.\+Cliente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria um Cliente, sem parâmetros definidos. 
+
+\mbox{\label{class_objetos_negocio_1_1_cliente_acafaa7873a8f2bfad446a7c8e2df5405}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!Cliente@{Cliente}}
+\index{Cliente@{Cliente}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{Cliente()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Cliente.\+Cliente (\begin{DoxyParamCaption}\item[{string}]{nome\+Externo,  }\item[{int}]{idade\+Externo,  }\item[{Date\+Time}]{data\+Nascimento\+Externo,  }\item[{string}]{sexo\+Externo,  }\item[{string}]{morada\+Externo,  }\item[{int}]{codigo\+Cliente,  }\item[{int}]{nif,  }\item[{int}]{numero\+Contribuinte,  }\item[{int}]{contacto,  }\item[{string}]{email,  }\item[{float}]{saldo }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria um Cliente, parâmetros definidos. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_objetos_negocio_1_1_cliente_a5cb6017ae5ebb875b6256907720b26dd}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!Equals@{Equals}}
+\index{Equals@{Equals}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{Equals()}
+{\footnotesize\ttfamily override bool Objetos\+Negocio.\+Cliente.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Verificar se os dois objetos são do mesmo tipo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_cliente_a665b38a82327ed7b8cff6680a0274f19}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{GetHashCode()}
+{\footnotesize\ttfamily override int Objetos\+Negocio.\+Cliente.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém um código hash para a Cliente. 
+
+\mbox{\label{class_objetos_negocio_1_1_cliente_aa4b1ea1552e7fe301eb5c7b53cac1836}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{operator"!=()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Cliente.\+operator!= (\begin{DoxyParamCaption}\item[{\textbf{ Cliente}}]{c1,  }\item[{\textbf{ Cliente}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Pessoa é diferente do outro objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_cliente_ab64ca72b1c2feb644489f6df799be1f7}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!operator==@{operator==}}
+\index{operator==@{operator==}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{operator==()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Cliente.\+operator== (\begin{DoxyParamCaption}\item[{\textbf{ Cliente}}]{c1,  }\item[{\textbf{ Cliente}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Cliente é igual ao outro objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t1} & \\
+\hline
+{\em t2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_cliente_abe830612b77a060ce60e9e1156cf8a90}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!ToString@{ToString}}
+\index{ToString@{ToString}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Objetos\+Negocio.\+Cliente.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Conversão do objeto numa string, mostrando os seus dados. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_objetos_negocio_1_1_cliente_a94de3282e2a0b2a7bdd4de2e0a3e1f75}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!CodigoCliente@{CodigoCliente}}
+\index{CodigoCliente@{CodigoCliente}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{CodigoCliente}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Cliente.\+Codigo\+Cliente\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do codigo Cliente de um Cliente. 
+
+\mbox{\label{class_objetos_negocio_1_1_cliente_ae4e5f0aedf38cd239296a500f59bde91}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!Contacto@{Contacto}}
+\index{Contacto@{Contacto}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{Contacto}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Cliente.\+Contacto\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do contacto de um Cliente. 
+
+\mbox{\label{class_objetos_negocio_1_1_cliente_a3df3c0597f0249563e7cb3dc2eba4b45}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!Email@{Email}}
+\index{Email@{Email}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{Email}
+{\footnotesize\ttfamily string Objetos\+Negocio.\+Cliente.\+Email\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do email de um Cliente. 
+
+\mbox{\label{class_objetos_negocio_1_1_cliente_ab3e8415b32b3ab78712d45e5724e8a2d}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!Nif@{Nif}}
+\index{Nif@{Nif}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{Nif}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Cliente.\+Nif\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade nif de um Cliente. 
+
+\mbox{\label{class_objetos_negocio_1_1_cliente_a5e0dc3494494d9ba18c700ab114ea458}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!NumeroContribuinte@{NumeroContribuinte}}
+\index{NumeroContribuinte@{NumeroContribuinte}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{NumeroContribuinte}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Cliente.\+Numero\+Contribuinte\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do codigo Cliente de um Cliente. 
+
+\mbox{\label{class_objetos_negocio_1_1_cliente_acb75053971132ff110300dfd9ec2b966}} 
+\index{ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}!Saldo@{Saldo}}
+\index{Saldo@{Saldo}!ObjetosNegocio.Cliente@{ObjetosNegocio.Cliente}}
+\doxysubsubsection{Saldo}
+{\footnotesize\ttfamily float Objetos\+Negocio.\+Cliente.\+Saldo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do saldo de um Cliente. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Cliente.\+cs}\end{DoxyCompactItemize}

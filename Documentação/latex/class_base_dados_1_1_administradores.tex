@@ -1,0 +1,157 @@
+\doxysection{Base\+Dados.\+Administradores Class Reference}
+\label{class_base_dados_1_1_administradores}\index{BaseDados.Administradores@{BaseDados.Administradores}}
+
+
+Classe Administradores que vai conter uma lista que é responsãvel por armazenar os administradores.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Administradores} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Override To\+String da classe Administradores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ Adicionar\+Administrador} (\textbf{ Administrador} administrador)
+\begin{DoxyCompactList}\small\item\em Método que adiciona um administrador da lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Administrador} (\textbf{ Administrador} administradores)
+\begin{DoxyCompactList}\small\item\em Método que remove um administrador da lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Administrador} ()
+\begin{DoxyCompactList}\small\item\em Método que ordena a lista pelo número de administradores por forma crescente. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Administradores} ()
+\begin{DoxyCompactList}\small\item\em Método que lê um ficheiro em binário, com a informação dos Administradores. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Administradores} ()
+\begin{DoxyCompactList}\small\item\em Método que guarda num ficheiro em binário, a informação dos Administradores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Administrador} $>$ \textbf{ Obter\+Lista}\hspace{0.3cm}{\ttfamily  [get]}
+\begin{DoxyCompactList}\small\item\em Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Administradores que vai conter uma lista que é responsãvel por armazenar os administradores. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_base_dados_1_1_administradores_a0418dc31bc0445d508166ac337344961}} 
+\index{BaseDados.Administradores@{BaseDados.Administradores}!Administradores@{Administradores}}
+\index{Administradores@{Administradores}!BaseDados.Administradores@{BaseDados.Administradores}}
+\doxysubsubsection{Administradores()}
+{\footnotesize\ttfamily Base\+Dados.\+Administradores.\+Administradores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_base_dados_1_1_administradores_aee0e6a2bea97e9976a9d00904d02d180}} 
+\index{BaseDados.Administradores@{BaseDados.Administradores}!AdicionarAdministrador@{AdicionarAdministrador}}
+\index{AdicionarAdministrador@{AdicionarAdministrador}!BaseDados.Administradores@{BaseDados.Administradores}}
+\doxysubsubsection{AdicionarAdministrador()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Administradores.\+Adicionar\+Administrador (\begin{DoxyParamCaption}\item[{\textbf{ Administrador}}]{administrador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que adiciona um administrador da lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em administrador} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_administradores_ad0a04e606794abc70896ff1deb7dd110}} 
+\index{BaseDados.Administradores@{BaseDados.Administradores}!GuardarFicheiroAdministradores@{GuardarFicheiroAdministradores}}
+\index{GuardarFicheiroAdministradores@{GuardarFicheiroAdministradores}!BaseDados.Administradores@{BaseDados.Administradores}}
+\doxysubsubsection{GuardarFicheiroAdministradores()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Administradores.\+Guardar\+Ficheiro\+Administradores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que guarda num ficheiro em binário, a informação dos Administradores. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_administradores_ad3afaa4152958af763e3cc6c6142c491}} 
+\index{BaseDados.Administradores@{BaseDados.Administradores}!LerFicheiroAdministradores@{LerFicheiroAdministradores}}
+\index{LerFicheiroAdministradores@{LerFicheiroAdministradores}!BaseDados.Administradores@{BaseDados.Administradores}}
+\doxysubsubsection{LerFicheiroAdministradores()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Administradores.\+Ler\+Ficheiro\+Administradores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que lê um ficheiro em binário, com a informação dos Administradores. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_administradores_a46594c95c24740aae852ba9b0d5d012f}} 
+\index{BaseDados.Administradores@{BaseDados.Administradores}!OrdenarAdministrador@{OrdenarAdministrador}}
+\index{OrdenarAdministrador@{OrdenarAdministrador}!BaseDados.Administradores@{BaseDados.Administradores}}
+\doxysubsubsection{OrdenarAdministrador()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Administradores.\+Ordenar\+Administrador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que ordena a lista pelo número de administradores por forma crescente. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_administradores_a2c4db77185ac6b31be0b100eb739fe2a}} 
+\index{BaseDados.Administradores@{BaseDados.Administradores}!RemoverAdministrador@{RemoverAdministrador}}
+\index{RemoverAdministrador@{RemoverAdministrador}!BaseDados.Administradores@{BaseDados.Administradores}}
+\doxysubsubsection{RemoverAdministrador()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Administradores.\+Remover\+Administrador (\begin{DoxyParamCaption}\item[{\textbf{ Administrador}}]{administradores }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que remove um administrador da lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em administradores} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_administradores_ad99d47935ed8ae8430bc10e1b1dd336b}} 
+\index{BaseDados.Administradores@{BaseDados.Administradores}!ToString@{ToString}}
+\index{ToString@{ToString}!BaseDados.Administradores@{BaseDados.Administradores}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Base\+Dados.\+Administradores.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Override To\+String da classe Administradores. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_base_dados_1_1_administradores_af8ce0e52247c8de4452ea32348306bd4}} 
+\index{BaseDados.Administradores@{BaseDados.Administradores}!ObterLista@{ObterLista}}
+\index{ObterLista@{ObterLista}!BaseDados.Administradores@{BaseDados.Administradores}}
+\doxysubsubsection{ObterLista}
+{\footnotesize\ttfamily List$<$\textbf{ Administrador}$>$ Base\+Dados.\+Administradores.\+Obter\+Lista\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Administradores.\+cs}\end{DoxyCompactItemize}

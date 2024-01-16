@@ -1,0 +1,237 @@
+\doxysection{Objetos\+Negocio.\+Limpador Class Reference}
+\label{class_objetos_negocio_1_1_limpador}\index{ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}}
+Inheritance diagram for Objetos\+Negocio.\+Limpador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_objetos_negocio_1_1_limpador}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Limpador} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Limpador, com parâmetros não definidos. \end{DoxyCompactList}\item 
+\textbf{ Limpador} (string nome\+Externo, int idade\+Externo, Date\+Time data\+Nascimento\+Externo, string sexo\+Externo, string morada\+Externo, int codigo\+Trabalhador\+Externo, string stand\+Externo, int anos\+Servico\+Externo, int id\+Limpador, float salario, int nivel\+Cargo, string funcoes)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um LLimpador, com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para o Limpador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Trabalhador}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Trabalhador} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Trabalhador, sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Trabalhador} (string nome\+Externo, int idade\+Externo, Date\+Time data\+Nascimento\+Externo, string sexo\+Externo, string morada\+Externo, int codigo\+Trabalhador, string stand, int anos\+Servico)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Trabalhador, com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a Trabalhador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pessoa} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Pessoa,sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Pessoa} (string nome, int idade, Date\+Time data\+Nascimento, string sexo, string morada)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Pessoa, com parâmetros definidos(nome, idade, data nascimento, sexo ,morada) \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Id\+Limpador}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade do id de limpador. \end{DoxyCompactList}\item 
+float \textbf{ Salario}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade salario de um limpador. \end{DoxyCompactList}\item 
+int \textbf{ Nivel\+Cargo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade do salario de um limpador. \end{DoxyCompactList}\item 
+string \textbf{ Funcoes}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade funções de um administrador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties inherited from \textbf{ Objetos\+Negocio.\+Trabalhador}}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Codigo\+Trabalhador}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade do codigo de trabalhador de uma pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Stand}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade do stand de trabalhador de um trabalhador. \end{DoxyCompactList}\item 
+int \textbf{ Anos\+Servico}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade dos anos de serviço de um trabalhador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+string \textbf{ Nome}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do nome de uma Pessoa. \end{DoxyCompactList}\item 
+int \textbf{ Idade}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da idade de uma Pessoa. \end{DoxyCompactList}\item 
+Date\+Time \textbf{ Data\+Nascimento}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da data\+Nascimento de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Sexo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do sexo de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Morada}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade da morada de uma pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Static Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Trabalhador}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Trabalhador} t1, \textbf{ Trabalhador} t2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Trabalhador é igual ao outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Trabalhador} t1, \textbf{ Trabalhador} t2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Pessoa} p1, \textbf{ Pessoa} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é igual ao outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Pessoa} p1, \textbf{ Pessoa} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_objetos_negocio_1_1_limpador_ae82df84a690e924b16b3d2e1691f5f75}} 
+\index{ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}!Limpador@{Limpador}}
+\index{Limpador@{Limpador}!ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}}
+\doxysubsubsection{Limpador()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Limpador.\+Limpador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria um Limpador, com parâmetros não definidos. 
+
+\mbox{\label{class_objetos_negocio_1_1_limpador_abce72b65d19f88c59aebfcbb0dea7b87}} 
+\index{ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}!Limpador@{Limpador}}
+\index{Limpador@{Limpador}!ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}}
+\doxysubsubsection{Limpador()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Limpador.\+Limpador (\begin{DoxyParamCaption}\item[{string}]{nome\+Externo,  }\item[{int}]{idade\+Externo,  }\item[{Date\+Time}]{data\+Nascimento\+Externo,  }\item[{string}]{sexo\+Externo,  }\item[{string}]{morada\+Externo,  }\item[{int}]{codigo\+Trabalhador\+Externo,  }\item[{string}]{stand\+Externo,  }\item[{int}]{anos\+Servico\+Externo,  }\item[{int}]{id\+Limpador,  }\item[{float}]{salario,  }\item[{int}]{nivel\+Cargo,  }\item[{string}]{funcoes }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria um LLimpador, com parâmetros definidos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Externo} & \\
+\hline
+{\em idade\+Externo} & \\
+\hline
+{\em data\+Nascimento\+Externo} & \\
+\hline
+{\em sexo\+Externo} & \\
+\hline
+{\em morada\+Externo} & \\
+\hline
+{\em codigo\+Trabalhador\+Externo} & \\
+\hline
+{\em stand\+Externo} & \\
+\hline
+{\em anos\+Servico\+Externo} & \\
+\hline
+{\em id\+Limpador} & \\
+\hline
+{\em salario} & \\
+\hline
+{\em nivel\+Cargo} & \\
+\hline
+{\em funcoes} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_objetos_negocio_1_1_limpador_a24057de26827f66a47e8a1164e660059}} 
+\index{ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}!Equals@{Equals}}
+\index{Equals@{Equals}!ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}}
+\doxysubsubsection{Equals()}
+{\footnotesize\ttfamily override bool Objetos\+Negocio.\+Limpador.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Verificar se os dois objetos são do mesmo tipo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_limpador_a2210904f7f06b01ab854c01a2e5dec9e}} 
+\index{ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}}
+\doxysubsubsection{GetHashCode()}
+{\footnotesize\ttfamily override int Objetos\+Negocio.\+Limpador.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém um código hash para o Limpador. 
+
+\mbox{\label{class_objetos_negocio_1_1_limpador_af38287320f68bb2447c9bd2ea60929ee}} 
+\index{ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}!ToString@{ToString}}
+\index{ToString@{ToString}!ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Objetos\+Negocio.\+Limpador.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Conversão do objeto numa string, mostrando os seus dados. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_objetos_negocio_1_1_limpador_a8ec43cc74dc150761ec73c6c0aff2ffa}} 
+\index{ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}!Funcoes@{Funcoes}}
+\index{Funcoes@{Funcoes}!ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}}
+\doxysubsubsection{Funcoes}
+{\footnotesize\ttfamily string Objetos\+Negocio.\+Limpador.\+Funcoes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade funções de um administrador. 
+
+\mbox{\label{class_objetos_negocio_1_1_limpador_ab7c7b7dacf5e73f83dc20fde4cc49275}} 
+\index{ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}!IdLimpador@{IdLimpador}}
+\index{IdLimpador@{IdLimpador}!ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}}
+\doxysubsubsection{IdLimpador}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Limpador.\+Id\+Limpador\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade do id de limpador. 
+
+\mbox{\label{class_objetos_negocio_1_1_limpador_acd833ff4e71621a12ba5d71107195d92}} 
+\index{ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}!NivelCargo@{NivelCargo}}
+\index{NivelCargo@{NivelCargo}!ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}}
+\doxysubsubsection{NivelCargo}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Limpador.\+Nivel\+Cargo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade do salario de um limpador. 
+
+\mbox{\label{class_objetos_negocio_1_1_limpador_a6ecb7ce5a512785e65f026a35c751a4f}} 
+\index{ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}!Salario@{Salario}}
+\index{Salario@{Salario}!ObjetosNegocio.Limpador@{ObjetosNegocio.Limpador}}
+\doxysubsubsection{Salario}
+{\footnotesize\ttfamily float Objetos\+Negocio.\+Limpador.\+Salario\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade salario de um limpador. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Limpador.\+cs}\end{DoxyCompactItemize}

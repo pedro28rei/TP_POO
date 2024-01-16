@@ -1,0 +1,534 @@
+\doxysection{Regras\+Negocio.\+Regras Class Reference}
+\label{class_regras_negocio_1_1_regras}\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+
+
+Classe onde sáo definidas as regras de negócio que permitem o contacto entre o backend e o frontend.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ Adicionar\+Carro\+BD} (\textbf{ Carro} carro)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder adicionar um carro na lista, e retorna true em com sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Carro\+BD} (\textbf{ Carro} carro)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder remover um carro da lista, e retorna true em caso de sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordernar\+Carro\+BD} ()
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder ordenar a lista de carros, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Carros\+BD} ()
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder ler o ficheiro, e retorna true em caso de sucesso e false em caso do oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Carros\+BD} ()
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder guardar o ficheiro, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Adicionar\+Mota\+BD} (\textbf{ Mota} mota)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder adicionar uma Mota á lista, e retorna true em caso de sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Mota\+BD} (\textbf{ Mota} mota)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder remover uma Mota da lista, e retorna true em caso de sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Motas\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder ordenar a lista de Motas, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Motas\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder ler o ficheiro com os dados das Motas, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Motas\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder guardar o ficheiro com os dados das Motas, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Adicionar\+Cliente\+BD} (\textbf{ Cliente} cliente)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder adicionar um Cliente na lista, e retorna true em com sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Cliente\+BD} (\textbf{ Cliente} cliente)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder remover um Cliente da lista, e retorna true em caso de sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Cliente\+BD} ()
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder ordenar a lista de Clientes, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Clientes\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder ler o ficheiro com os dados dos Clientes, e retorna a lista em caso de sucesso. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Clientes\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder guardar o ficheiro com os dados dos Clientes, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Adicionar\+Vendedor\+BD} (\textbf{ Vendedor} vendedor)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder adicionar um Vendedor na lista, e retorna true em com sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Vendedor\+BD} (\textbf{ Vendedor} vendedor)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder remover um Vendedor da lista, e retorna true em caso de sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Vendedor\+BD} ()
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder ordenar a lista de Vendedores, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Vendedores\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder ler o ficheiro com os dados dos Vendedores, e retorna a lista em caso de sucesso. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Vendedores\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder guardar o ficheiro com os dados dos Vendedores, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Adicionar\+Administrador\+BD} (\textbf{ Administrador} administrador)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder adicionar um Administrador na lista, e retorna true em com sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Administrador\+BD} (\textbf{ Administrador} administrador)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder remover um Administrador da lista, e retorna true em caso de sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Administrador\+BD} ()
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder ordenar a lista de Administradores, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Administradores\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder ler o ficheiro com os dados dos Administradores, e retorna a lista em caso de sucesso. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Administradores\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder guardar o ficheiro com os dados dos Administradores, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Adicionar\+Limpador\+BD} (\textbf{ Limpador} limpador)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder adicionar um Administrador na lista, e retorna true em com sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Limpador\+BD} (\textbf{ Limpador} limpador)
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder remover um Administrador da lista, e retorna true em caso de sucesso ou false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Limpadores\+BD} ()
+\begin{DoxyCompactList}\small\item\em Método que define as regras para poder ordenar a lista de Limpadores, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Limpadores\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder ler o ficheiro com os dados dos Limpadores, e retorna a lista em caso de sucesso. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Limpadores\+BD} ()
+\begin{DoxyCompactList}\small\item\em Metodo que define as regras para poder guardar o ficheiro com os dados dos Limpadores, e retorna true em caso de sucesso e false caso o oposto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe onde sáo definidas as regras de negócio que permitem o contacto entre o backend e o frontend. 
+
+~\newline
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_regras_negocio_1_1_regras_a0b64fac163ff48f628fcee5bba909018}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!AdicionarAdministradorBD@{AdicionarAdministradorBD}}
+\index{AdicionarAdministradorBD@{AdicionarAdministradorBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{AdicionarAdministradorBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Adicionar\+Administrador\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Administrador}}]{administrador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder adicionar um Administrador na lista, e retorna true em com sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em administrador} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_ad3c0442b51fb67f262967955b3b4af9f}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!AdicionarCarroBD@{AdicionarCarroBD}}
+\index{AdicionarCarroBD@{AdicionarCarroBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{AdicionarCarroBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Adicionar\+Carro\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Carro}}]{carro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder adicionar um carro na lista, e retorna true em com sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em carro} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a948badccf63c67c3ace647fddfd552b4}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!AdicionarClienteBD@{AdicionarClienteBD}}
+\index{AdicionarClienteBD@{AdicionarClienteBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{AdicionarClienteBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Adicionar\+Cliente\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Cliente}}]{cliente }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder adicionar um Cliente na lista, e retorna true em com sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a92251122bd23c90a4b370117dd502e1d}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!AdicionarLimpadorBD@{AdicionarLimpadorBD}}
+\index{AdicionarLimpadorBD@{AdicionarLimpadorBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{AdicionarLimpadorBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Adicionar\+Limpador\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Limpador}}]{limpador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder adicionar um Administrador na lista, e retorna true em com sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em limpador} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a6a2d84be021906100a8b15db3de57507}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!AdicionarMotaBD@{AdicionarMotaBD}}
+\index{AdicionarMotaBD@{AdicionarMotaBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{AdicionarMotaBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Adicionar\+Mota\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Mota}}]{mota }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder adicionar uma Mota á lista, e retorna true em caso de sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mota} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a5378f5c61741368df6682b096f8ce2f5}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!AdicionarVendedorBD@{AdicionarVendedorBD}}
+\index{AdicionarVendedorBD@{AdicionarVendedorBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{AdicionarVendedorBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Adicionar\+Vendedor\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Vendedor}}]{vendedor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder adicionar um Vendedor na lista, e retorna true em com sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vendedor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a301ca59bf29ef89307d40f9861326d4c}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!GuardarFicheiroAdministradoresBD@{GuardarFicheiroAdministradoresBD}}
+\index{GuardarFicheiroAdministradoresBD@{GuardarFicheiroAdministradoresBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{GuardarFicheiroAdministradoresBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Guardar\+Ficheiro\+Administradores\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder guardar o ficheiro com os dados dos Administradores, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a4d8405c4f12af460ff825eb0cadf4eee}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!GuardarFicheiroCarrosBD@{GuardarFicheiroCarrosBD}}
+\index{GuardarFicheiroCarrosBD@{GuardarFicheiroCarrosBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{GuardarFicheiroCarrosBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Guardar\+Ficheiro\+Carros\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder guardar o ficheiro, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a367f0414e2a92e8a341269850ccc320a}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!GuardarFicheiroClientesBD@{GuardarFicheiroClientesBD}}
+\index{GuardarFicheiroClientesBD@{GuardarFicheiroClientesBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{GuardarFicheiroClientesBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Guardar\+Ficheiro\+Clientes\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder guardar o ficheiro com os dados dos Clientes, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a6770ff78f45fc61da050ad65d339a4bf}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!GuardarFicheiroLimpadoresBD@{GuardarFicheiroLimpadoresBD}}
+\index{GuardarFicheiroLimpadoresBD@{GuardarFicheiroLimpadoresBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{GuardarFicheiroLimpadoresBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Guardar\+Ficheiro\+Limpadores\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder guardar o ficheiro com os dados dos Limpadores, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a92cb91b89a4c3dad5b885ee8c05e0c38}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!GuardarFicheiroMotasBD@{GuardarFicheiroMotasBD}}
+\index{GuardarFicheiroMotasBD@{GuardarFicheiroMotasBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{GuardarFicheiroMotasBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Guardar\+Ficheiro\+Motas\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder guardar o ficheiro com os dados das Motas, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a809433962b4c0a487064e4390f4f911b}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!GuardarFicheiroVendedoresBD@{GuardarFicheiroVendedoresBD}}
+\index{GuardarFicheiroVendedoresBD@{GuardarFicheiroVendedoresBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{GuardarFicheiroVendedoresBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Guardar\+Ficheiro\+Vendedores\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder guardar o ficheiro com os dados dos Vendedores, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_ac367d5ddd53622da618caf50a74431da}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!LerFicheiroAdministradoresBD@{LerFicheiroAdministradoresBD}}
+\index{LerFicheiroAdministradoresBD@{LerFicheiroAdministradoresBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{LerFicheiroAdministradoresBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ler\+Ficheiro\+Administradores\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder ler o ficheiro com os dados dos Administradores, e retorna a lista em caso de sucesso. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_aa6fe01f66eedfbf37b2571ccf914c7e2}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!LerFicheiroCarrosBD@{LerFicheiroCarrosBD}}
+\index{LerFicheiroCarrosBD@{LerFicheiroCarrosBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{LerFicheiroCarrosBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ler\+Ficheiro\+Carros\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder ler o ficheiro, e retorna true em caso de sucesso e false em caso do oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a59c6aafe35d2d89734adbbe3c32998ec}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!LerFicheiroClientesBD@{LerFicheiroClientesBD}}
+\index{LerFicheiroClientesBD@{LerFicheiroClientesBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{LerFicheiroClientesBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ler\+Ficheiro\+Clientes\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder ler o ficheiro com os dados dos Clientes, e retorna a lista em caso de sucesso. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a7d7f3865bba0e543c0232dbc13b185a9}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!LerFicheiroLimpadoresBD@{LerFicheiroLimpadoresBD}}
+\index{LerFicheiroLimpadoresBD@{LerFicheiroLimpadoresBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{LerFicheiroLimpadoresBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ler\+Ficheiro\+Limpadores\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder ler o ficheiro com os dados dos Limpadores, e retorna a lista em caso de sucesso. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a75048569a975c616488a6471b3f425dc}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!LerFicheiroMotasBD@{LerFicheiroMotasBD}}
+\index{LerFicheiroMotasBD@{LerFicheiroMotasBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{LerFicheiroMotasBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ler\+Ficheiro\+Motas\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder ler o ficheiro com os dados das Motas, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_aa53865d63a2ffc73995bbc6c00c69315}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!LerFicheiroVendedoresBD@{LerFicheiroVendedoresBD}}
+\index{LerFicheiroVendedoresBD@{LerFicheiroVendedoresBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{LerFicheiroVendedoresBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ler\+Ficheiro\+Vendedores\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder ler o ficheiro com os dados dos Vendedores, e retorna a lista em caso de sucesso. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_ae2761ec834d251839c80fa1c189b3ab3}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!OrdenarAdministradorBD@{OrdenarAdministradorBD}}
+\index{OrdenarAdministradorBD@{OrdenarAdministradorBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{OrdenarAdministradorBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ordenar\+Administrador\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder ordenar a lista de Administradores, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a344986be9779daf214575ff9e595dca5}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!OrdenarClienteBD@{OrdenarClienteBD}}
+\index{OrdenarClienteBD@{OrdenarClienteBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{OrdenarClienteBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ordenar\+Cliente\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder ordenar a lista de Clientes, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a81e5e748d1c8c7657ef28f6d1132c252}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!OrdenarLimpadoresBD@{OrdenarLimpadoresBD}}
+\index{OrdenarLimpadoresBD@{OrdenarLimpadoresBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{OrdenarLimpadoresBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ordenar\+Limpadores\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder ordenar a lista de Limpadores, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a91344ce22e99f263bab6ea0c6518b33f}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!OrdenarMotasBD@{OrdenarMotasBD}}
+\index{OrdenarMotasBD@{OrdenarMotasBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{OrdenarMotasBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ordenar\+Motas\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Metodo que define as regras para poder ordenar a lista de Motas, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_add26c03cd99ac3d20458ee90c4689ea2}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!OrdenarVendedorBD@{OrdenarVendedorBD}}
+\index{OrdenarVendedorBD@{OrdenarVendedorBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{OrdenarVendedorBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ordenar\+Vendedor\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder ordenar a lista de Vendedores, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_aa73b0aa80579113f371f3c2c1b3ca68c}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!OrdernarCarroBD@{OrdernarCarroBD}}
+\index{OrdernarCarroBD@{OrdernarCarroBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{OrdernarCarroBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Ordernar\+Carro\+BD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder ordenar a lista de carros, e retorna true em caso de sucesso e false caso o oposto. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a9ccee0778a2c7e2d22276eaf9fd80d2a}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!RemoverAdministradorBD@{RemoverAdministradorBD}}
+\index{RemoverAdministradorBD@{RemoverAdministradorBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{RemoverAdministradorBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Remover\+Administrador\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Administrador}}]{administrador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder remover um Administrador da lista, e retorna true em caso de sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em administrador} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a3325e8e002a24ad6432c1efa763be7b6}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!RemoverCarroBD@{RemoverCarroBD}}
+\index{RemoverCarroBD@{RemoverCarroBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{RemoverCarroBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Remover\+Carro\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Carro}}]{carro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder remover um carro da lista, e retorna true em caso de sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em carro} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_ae50d4277f2eb492e8c96f299a1fc4061}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!RemoverClienteBD@{RemoverClienteBD}}
+\index{RemoverClienteBD@{RemoverClienteBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{RemoverClienteBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Remover\+Cliente\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Cliente}}]{cliente }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder remover um Cliente da lista, e retorna true em caso de sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a23db332ca5330e5615171363ca3f5d70}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!RemoverLimpadorBD@{RemoverLimpadorBD}}
+\index{RemoverLimpadorBD@{RemoverLimpadorBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{RemoverLimpadorBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Remover\+Limpador\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Limpador}}]{limpador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder remover um Administrador da lista, e retorna true em caso de sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em limpador} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a039e9397789e23e26e7255ebb5c3c7a4}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!RemoverMotaBD@{RemoverMotaBD}}
+\index{RemoverMotaBD@{RemoverMotaBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{RemoverMotaBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Remover\+Mota\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Mota}}]{mota }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder remover uma Mota da lista, e retorna true em caso de sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mota} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_regras_negocio_1_1_regras_a6905f42f5e7f059e8f9f4d1efb0e5f41}} 
+\index{RegrasNegocio.Regras@{RegrasNegocio.Regras}!RemoverVendedorBD@{RemoverVendedorBD}}
+\index{RemoverVendedorBD@{RemoverVendedorBD}!RegrasNegocio.Regras@{RegrasNegocio.Regras}}
+\doxysubsubsection{RemoverVendedorBD()}
+{\footnotesize\ttfamily static bool Regras\+Negocio.\+Regras.\+Remover\+Vendedor\+BD (\begin{DoxyParamCaption}\item[{\textbf{ Vendedor}}]{vendedor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que define as regras para poder remover um Vendedor da lista, e retorna true em caso de sucesso ou false caso o oposto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vendedor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Regras.\+cs}\end{DoxyCompactItemize}

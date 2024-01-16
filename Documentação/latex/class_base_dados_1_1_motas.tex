@@ -1,0 +1,162 @@
+\doxysection{Base\+Dados.\+Motas Class Reference}
+\label{class_base_dados_1_1_motas}\index{BaseDados.Motas@{BaseDados.Motas}}
+
+
+Classe Motas, que vai conter uma lista que é responsável para armezenar as motas.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Motas} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Override To\+String da classe Motas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ Adicionar\+Mota} (\textbf{ Mota} mota)
+\begin{DoxyCompactList}\small\item\em Método que adiciona um a mota na lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Mota} (\textbf{ Mota} mota)
+\begin{DoxyCompactList}\small\item\em Método que remove uma mota da lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Motas} ()
+\begin{DoxyCompactList}\small\item\em Método que ordena a lista pelo número de cliente que forma crescente. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Motas} ()
+\begin{DoxyCompactList}\small\item\em Método que lê um ficheiro em binário, com a informação das Motas. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Motas} ()
+\begin{DoxyCompactList}\small\item\em Método que guarda num ficheiro em binário, a informação dos Clientes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Mota} $>$ \textbf{ Obter\+Lista}\hspace{0.3cm}{\ttfamily  [get]}
+\begin{DoxyCompactList}\small\item\em Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Motas, que vai conter uma lista que é responsável para armezenar as motas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_base_dados_1_1_motas_a3d348fed20f23437c48d867553f208a8}} 
+\index{BaseDados.Motas@{BaseDados.Motas}!Motas@{Motas}}
+\index{Motas@{Motas}!BaseDados.Motas@{BaseDados.Motas}}
+\doxysubsubsection{Motas()}
+{\footnotesize\ttfamily Base\+Dados.\+Motas.\+Motas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_base_dados_1_1_motas_a8f0c540f363b670badfd283d08a619a9}} 
+\index{BaseDados.Motas@{BaseDados.Motas}!AdicionarMota@{AdicionarMota}}
+\index{AdicionarMota@{AdicionarMota}!BaseDados.Motas@{BaseDados.Motas}}
+\doxysubsubsection{AdicionarMota()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Motas.\+Adicionar\+Mota (\begin{DoxyParamCaption}\item[{\textbf{ Mota}}]{mota }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que adiciona um a mota na lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mota} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_motas_a9d5daf1ed3b94118fb0127a6c2ae641f}} 
+\index{BaseDados.Motas@{BaseDados.Motas}!GuardarFicheiroMotas@{GuardarFicheiroMotas}}
+\index{GuardarFicheiroMotas@{GuardarFicheiroMotas}!BaseDados.Motas@{BaseDados.Motas}}
+\doxysubsubsection{GuardarFicheiroMotas()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Motas.\+Guardar\+Ficheiro\+Motas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que guarda num ficheiro em binário, a informação dos Clientes. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_motas_a4b9db44e4e21a8e6e88068ceea17bee0}} 
+\index{BaseDados.Motas@{BaseDados.Motas}!LerFicheiroMotas@{LerFicheiroMotas}}
+\index{LerFicheiroMotas@{LerFicheiroMotas}!BaseDados.Motas@{BaseDados.Motas}}
+\doxysubsubsection{LerFicheiroMotas()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Motas.\+Ler\+Ficheiro\+Motas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que lê um ficheiro em binário, com a informação das Motas. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_motas_ac2ba995efbe89f3b0ccd7b0db73f96ce}} 
+\index{BaseDados.Motas@{BaseDados.Motas}!OrdenarMotas@{OrdenarMotas}}
+\index{OrdenarMotas@{OrdenarMotas}!BaseDados.Motas@{BaseDados.Motas}}
+\doxysubsubsection{OrdenarMotas()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Motas.\+Ordenar\+Motas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que ordena a lista pelo número de cliente que forma crescente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em motas} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_motas_acf4877fe71dcb15f7a40541859580479}} 
+\index{BaseDados.Motas@{BaseDados.Motas}!RemoverMota@{RemoverMota}}
+\index{RemoverMota@{RemoverMota}!BaseDados.Motas@{BaseDados.Motas}}
+\doxysubsubsection{RemoverMota()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Motas.\+Remover\+Mota (\begin{DoxyParamCaption}\item[{\textbf{ Mota}}]{mota }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que remove uma mota da lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mota} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_motas_a536231d71f6f055635e9cd6f27812f4c}} 
+\index{BaseDados.Motas@{BaseDados.Motas}!ToString@{ToString}}
+\index{ToString@{ToString}!BaseDados.Motas@{BaseDados.Motas}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Base\+Dados.\+Motas.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Override To\+String da classe Motas. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_base_dados_1_1_motas_a7e6e8c9a5bb8f40a9c560cf6db4497ee}} 
+\index{BaseDados.Motas@{BaseDados.Motas}!ObterLista@{ObterLista}}
+\index{ObterLista@{ObterLista}!BaseDados.Motas@{BaseDados.Motas}}
+\doxysubsubsection{ObterLista}
+{\footnotesize\ttfamily List$<$\textbf{ Mota}$>$ Base\+Dados.\+Motas.\+Obter\+Lista\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Motas.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,264 @@
+\doxysection{Objetos\+Negocio.\+Vendedor Class Reference}
+\label{class_objetos_negocio_1_1_vendedor}\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+
+
+Classe Vendedor, que herda a classe Pessoa.  
+
+
+Inheritance diagram for Objetos\+Negocio.\+Vendedor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_objetos_negocio_1_1_vendedor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Vendedor} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Vendedor, sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Vendedor} (string nome\+Externo, int idade\+Externo, Date\+Time data\+Nascimento\+Externo, string sexo\+Externo, string morada\+Externo, int Codigo\+Trabalhador\+Externo, String stand\+Externo, int Anos\+Servico\+Externo, int id\+Vendedor, float salario, int nivel\+Cargo, string funcoes)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Trabalhador, com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a Vendedor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Trabalhador}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Trabalhador} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Trabalhador, sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Trabalhador} (string nome\+Externo, int idade\+Externo, Date\+Time data\+Nascimento\+Externo, string sexo\+Externo, string morada\+Externo, int codigo\+Trabalhador, string stand, int anos\+Servico)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Trabalhador, com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a Trabalhador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pessoa} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Pessoa,sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Pessoa} (string nome, int idade, Date\+Time data\+Nascimento, string sexo, string morada)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Pessoa, com parâmetros definidos(nome, idade, data nascimento, sexo ,morada) \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Vendedor} v1, \textbf{ Vendedor} v2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Vendedor é igual ao outro objeto, através do id\+Vendedor. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Vendedor} v1, \textbf{ Vendedor} v2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Vendedor é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Trabalhador}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Trabalhador} t1, \textbf{ Trabalhador} t2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Trabalhador é igual ao outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Trabalhador} t1, \textbf{ Trabalhador} t2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Pessoa} p1, \textbf{ Pessoa} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é igual ao outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Pessoa} p1, \textbf{ Pessoa} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Id\+Vendedor}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade id\+Vendedor de um Vendedor. \end{DoxyCompactList}\item 
+float \textbf{ Salario}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade salario de um Vendedor. \end{DoxyCompactList}\item 
+int \textbf{ Nivel\+Cargo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade Nivel Cargo de um Vendedor. \end{DoxyCompactList}\item 
+string \textbf{ Funcoes}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade Funcoes de um Vendedor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties inherited from \textbf{ Objetos\+Negocio.\+Trabalhador}}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Codigo\+Trabalhador}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade do codigo de trabalhador de uma pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Stand}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade do stand de trabalhador de um trabalhador. \end{DoxyCompactList}\item 
+int \textbf{ Anos\+Servico}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade dos anos de serviço de um trabalhador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+string \textbf{ Nome}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do nome de uma Pessoa. \end{DoxyCompactList}\item 
+int \textbf{ Idade}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da idade de uma Pessoa. \end{DoxyCompactList}\item 
+Date\+Time \textbf{ Data\+Nascimento}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da data\+Nascimento de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Sexo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do sexo de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Morada}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade da morada de uma pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Vendedor, que herda a classe Pessoa. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_objetos_negocio_1_1_vendedor_a4e4e4889d70362024ba80c9b8ccc089e}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!Vendedor@{Vendedor}}
+\index{Vendedor@{Vendedor}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{Vendedor()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Vendedor.\+Vendedor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria um Vendedor, sem parâmetros definidos. 
+
+\mbox{\label{class_objetos_negocio_1_1_vendedor_af13a54d45b28db44edb68d23755c79e5}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!Vendedor@{Vendedor}}
+\index{Vendedor@{Vendedor}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{Vendedor()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Vendedor.\+Vendedor (\begin{DoxyParamCaption}\item[{string}]{nome\+Externo,  }\item[{int}]{idade\+Externo,  }\item[{Date\+Time}]{data\+Nascimento\+Externo,  }\item[{string}]{sexo\+Externo,  }\item[{string}]{morada\+Externo,  }\item[{int}]{Codigo\+Trabalhador\+Externo,  }\item[{String}]{stand\+Externo,  }\item[{int}]{Anos\+Servico\+Externo,  }\item[{int}]{id\+Vendedor,  }\item[{float}]{salario,  }\item[{int}]{nivel\+Cargo,  }\item[{string}]{funcoes }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria um Trabalhador, com parâmetros definidos. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_objetos_negocio_1_1_vendedor_aebb3adbc8400e55306e7f8cf40603837}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!Equals@{Equals}}
+\index{Equals@{Equals}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{Equals()}
+{\footnotesize\ttfamily override bool Objetos\+Negocio.\+Vendedor.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Verificar se os dois objetos são do mesmo tipo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_vendedor_aab609cc10bcd72220f55697db4ed677f}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{GetHashCode()}
+{\footnotesize\ttfamily override int Objetos\+Negocio.\+Vendedor.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém um código hash para a Vendedor. 
+
+\mbox{\label{class_objetos_negocio_1_1_vendedor_a35344787900353ef5fefdd13ab4068b1}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{operator"!=()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Vendedor.\+operator!= (\begin{DoxyParamCaption}\item[{\textbf{ Vendedor}}]{v1,  }\item[{\textbf{ Vendedor}}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Vendedor é diferente do outro objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_vendedor_a8133750dc6fed23739105c6132332ac8}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!operator==@{operator==}}
+\index{operator==@{operator==}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{operator==()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Vendedor.\+operator== (\begin{DoxyParamCaption}\item[{\textbf{ Vendedor}}]{v1,  }\item[{\textbf{ Vendedor}}]{v2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Vendedor é igual ao outro objeto, através do id\+Vendedor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v1} & \\
+\hline
+{\em v2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_vendedor_afa5697beb976590f2e3f3e000ce7a873}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!ToString@{ToString}}
+\index{ToString@{ToString}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Objetos\+Negocio.\+Vendedor.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Conversão do objeto numa string, mostrando os seus dados. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_objetos_negocio_1_1_vendedor_a7435f6700b8799b1d3e9c4d907e9b93a}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!Funcoes@{Funcoes}}
+\index{Funcoes@{Funcoes}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{Funcoes}
+{\footnotesize\ttfamily string Objetos\+Negocio.\+Vendedor.\+Funcoes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade Funcoes de um Vendedor. 
+
+\mbox{\label{class_objetos_negocio_1_1_vendedor_a2a7df884b818ba8affdae507df5d84fe}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!IdVendedor@{IdVendedor}}
+\index{IdVendedor@{IdVendedor}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{IdVendedor}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Vendedor.\+Id\+Vendedor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade id\+Vendedor de um Vendedor. 
+
+\mbox{\label{class_objetos_negocio_1_1_vendedor_a2015c08c93cd27bc6f00084c42c8de6e}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!NivelCargo@{NivelCargo}}
+\index{NivelCargo@{NivelCargo}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{NivelCargo}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Vendedor.\+Nivel\+Cargo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade Nivel Cargo de um Vendedor. 
+
+\mbox{\label{class_objetos_negocio_1_1_vendedor_a1ef0914923be3346a0ff04f0cce2e719}} 
+\index{ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}!Salario@{Salario}}
+\index{Salario@{Salario}!ObjetosNegocio.Vendedor@{ObjetosNegocio.Vendedor}}
+\doxysubsubsection{Salario}
+{\footnotesize\ttfamily float Objetos\+Negocio.\+Vendedor.\+Salario\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade salario de um Vendedor. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Vendedor.\+cs}\end{DoxyCompactItemize}

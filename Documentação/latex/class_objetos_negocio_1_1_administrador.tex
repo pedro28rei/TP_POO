@@ -1,0 +1,289 @@
+\doxysection{Objetos\+Negocio.\+Administrador Class Reference}
+\label{class_objetos_negocio_1_1_administrador}\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+
+
+Classe Administrador.  
+
+
+Inheritance diagram for Objetos\+Negocio.\+Administrador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_objetos_negocio_1_1_administrador}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Administrador} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Administrador, com parâmetros não definidos. \end{DoxyCompactList}\item 
+\textbf{ Administrador} (string nome\+Externo, int idade\+Externo, Date\+Time data\+Nascimento\+Externo, string sexo\+Externo, string morada\+Externo, int codigo\+Trabalhador\+Externo, string stand\+Externo, int anos\+Servico\+Externo, int id\+Admin, float salario, int nivel\+Cargo, string funcoes)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Trabalhador, com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a Administrador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Trabalhador}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Trabalhador} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Trabalhador, sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Trabalhador} (string nome\+Externo, int idade\+Externo, Date\+Time data\+Nascimento\+Externo, string sexo\+Externo, string morada\+Externo, int codigo\+Trabalhador, string stand, int anos\+Servico)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Trabalhador, com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a Trabalhador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pessoa} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Pessoa,sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Pessoa} (string nome, int idade, Date\+Time data\+Nascimento, string sexo, string morada)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Pessoa, com parâmetros definidos(nome, idade, data nascimento, sexo ,morada) \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Administrador} a1, \textbf{ Administrador} a2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Administrador é igual ao outro objeto, através do id\+Admin. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Administrador} a1, \textbf{ Administrador} a2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Trabalhador}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Trabalhador} t1, \textbf{ Trabalhador} t2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Trabalhador é igual ao outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Trabalhador} t1, \textbf{ Trabalhador} t2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Pessoa} p1, \textbf{ Pessoa} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é igual ao outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Pessoa} p1, \textbf{ Pessoa} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Id\+Admin}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade do id de adminstador. \end{DoxyCompactList}\item 
+float \textbf{ Salario}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade salario de um administrador. \end{DoxyCompactList}\item 
+int \textbf{ Nivel\+Cargo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade do salario de um administrador. \end{DoxyCompactList}\item 
+string \textbf{ Funcoes}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade funções de um administrador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties inherited from \textbf{ Objetos\+Negocio.\+Trabalhador}}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Codigo\+Trabalhador}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade do codigo de trabalhador de uma pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Stand}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade do stand de trabalhador de um trabalhador. \end{DoxyCompactList}\item 
+int \textbf{ Anos\+Servico}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade dos anos de serviço de um trabalhador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties inherited from \textbf{ Objetos\+Negocio.\+Pessoa}}
+\begin{DoxyCompactItemize}
+\item 
+string \textbf{ Nome}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do nome de uma Pessoa. \end{DoxyCompactList}\item 
+int \textbf{ Idade}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da idade de uma Pessoa. \end{DoxyCompactList}\item 
+Date\+Time \textbf{ Data\+Nascimento}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da data\+Nascimento de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Sexo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do sexo de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Morada}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade da morada de uma pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Administrador. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_objetos_negocio_1_1_administrador_aef01f0973419aa233756645b99043969}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!Administrador@{Administrador}}
+\index{Administrador@{Administrador}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{Administrador()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Administrador.\+Administrador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria um Administrador, com parâmetros não definidos. 
+
+\mbox{\label{class_objetos_negocio_1_1_administrador_afa5156e109f0a8a13ff88838e3ab56b5}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!Administrador@{Administrador}}
+\index{Administrador@{Administrador}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{Administrador()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Administrador.\+Administrador (\begin{DoxyParamCaption}\item[{string}]{nome\+Externo,  }\item[{int}]{idade\+Externo,  }\item[{Date\+Time}]{data\+Nascimento\+Externo,  }\item[{string}]{sexo\+Externo,  }\item[{string}]{morada\+Externo,  }\item[{int}]{codigo\+Trabalhador\+Externo,  }\item[{string}]{stand\+Externo,  }\item[{int}]{anos\+Servico\+Externo,  }\item[{int}]{id\+Admin,  }\item[{float}]{salario,  }\item[{int}]{nivel\+Cargo,  }\item[{string}]{funcoes }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria um Trabalhador, com parâmetros definidos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Externo} & \\
+\hline
+{\em idade\+Externo} & \\
+\hline
+{\em data\+Nascimento\+Externo} & \\
+\hline
+{\em sexo\+Externo} & \\
+\hline
+{\em morada\+Externo} & \\
+\hline
+{\em codigo\+Trabalhador\+Externo} & \\
+\hline
+{\em stand\+Externo} & \\
+\hline
+{\em anos\+Servico\+Externo} & \\
+\hline
+{\em salario} & \\
+\hline
+{\em nivel\+Cargo} & \\
+\hline
+{\em funcoes} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_objetos_negocio_1_1_administrador_a89a3384ab69e0036e23a08e3462ab509}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!Equals@{Equals}}
+\index{Equals@{Equals}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{Equals()}
+{\footnotesize\ttfamily override bool Objetos\+Negocio.\+Administrador.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Verificar se os dois objetos são do mesmo tipo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_administrador_a0a870f8dd35b9d697d50528dbd8c8fb9}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{GetHashCode()}
+{\footnotesize\ttfamily override int Objetos\+Negocio.\+Administrador.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém um código hash para a Administrador. 
+
+\mbox{\label{class_objetos_negocio_1_1_administrador_a47bd51ce84bc63f386e48e3e723eeee7}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{operator"!=()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Administrador.\+operator!= (\begin{DoxyParamCaption}\item[{\textbf{ Administrador}}]{a1,  }\item[{\textbf{ Administrador}}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Pessoa é diferente do outro objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_administrador_a815d42a520a5c07b96d4c93bea3da3f8}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!operator==@{operator==}}
+\index{operator==@{operator==}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{operator==()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Administrador.\+operator== (\begin{DoxyParamCaption}\item[{\textbf{ Administrador}}]{a1,  }\item[{\textbf{ Administrador}}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Administrador é igual ao outro objeto, através do id\+Admin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t1} & \\
+\hline
+{\em t2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_administrador_a8b4a23e027c8128402c778491c9a4057}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!ToString@{ToString}}
+\index{ToString@{ToString}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Objetos\+Negocio.\+Administrador.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Conversão do objeto numa string, mostrando os seus dados. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_objetos_negocio_1_1_administrador_aa0d90db4ce167e4f50a72d7ed8b1794f}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!Funcoes@{Funcoes}}
+\index{Funcoes@{Funcoes}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{Funcoes}
+{\footnotesize\ttfamily string Objetos\+Negocio.\+Administrador.\+Funcoes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade funções de um administrador. 
+
+\mbox{\label{class_objetos_negocio_1_1_administrador_a791ca530e8a224f424077059a90c735e}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!IdAdmin@{IdAdmin}}
+\index{IdAdmin@{IdAdmin}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{IdAdmin}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Administrador.\+Id\+Admin\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade do id de adminstador. 
+
+\mbox{\label{class_objetos_negocio_1_1_administrador_aef1841c585d36cf3f223fe7ab026ed5f}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!NivelCargo@{NivelCargo}}
+\index{NivelCargo@{NivelCargo}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{NivelCargo}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Administrador.\+Nivel\+Cargo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade do salario de um administrador. 
+
+\mbox{\label{class_objetos_negocio_1_1_administrador_ae2ea72e1a7a9cacf34f82f43e3210d68}} 
+\index{ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}!Salario@{Salario}}
+\index{Salario@{Salario}!ObjetosNegocio.Administrador@{ObjetosNegocio.Administrador}}
+\doxysubsubsection{Salario}
+{\footnotesize\ttfamily float Objetos\+Negocio.\+Administrador.\+Salario\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade salario de um administrador. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Administrador.\+cs}\end{DoxyCompactItemize}

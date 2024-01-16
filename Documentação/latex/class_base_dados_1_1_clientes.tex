@@ -1,0 +1,147 @@
+\doxysection{Base\+Dados.\+Clientes Class Reference}
+\label{class_base_dados_1_1_clientes}\index{BaseDados.Clientes@{BaseDados.Clientes}}
+
+
+Classe Clientes que vai conter uma lista que é responsãvel por armazenar os clientes.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Clientes} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ Adicionar\+Cliente} (\textbf{ Cliente} cliente)
+\begin{DoxyCompactList}\small\item\em Método que adiciona um cliente da lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Cliente} (\textbf{ Cliente} cliente)
+\begin{DoxyCompactList}\small\item\em Método que remove um cliente da lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Cliente} ()
+\begin{DoxyCompactList}\small\item\em Método que ordena a lista pelo número de cliente que forma crescente. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Clientes} ()
+\begin{DoxyCompactList}\small\item\em Método que lê um ficheiro em binário, com a informação dos Clientes. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Clientes} ()
+\begin{DoxyCompactList}\small\item\em Método que guarda num ficheiro em binário, a informação dos Clientes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Cliente} $>$ \textbf{ Obter\+Lista}\hspace{0.3cm}{\ttfamily  [get]}
+\begin{DoxyCompactList}\small\item\em Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Clientes que vai conter uma lista que é responsãvel por armazenar os clientes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_base_dados_1_1_clientes_a27345e59920812a7b3dc6333fedba2b3}} 
+\index{BaseDados.Clientes@{BaseDados.Clientes}!Clientes@{Clientes}}
+\index{Clientes@{Clientes}!BaseDados.Clientes@{BaseDados.Clientes}}
+\doxysubsubsection{Clientes()}
+{\footnotesize\ttfamily Base\+Dados.\+Clientes.\+Clientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_base_dados_1_1_clientes_aed0e75b4ceb9d5e5a111674e0e8efe97}} 
+\index{BaseDados.Clientes@{BaseDados.Clientes}!AdicionarCliente@{AdicionarCliente}}
+\index{AdicionarCliente@{AdicionarCliente}!BaseDados.Clientes@{BaseDados.Clientes}}
+\doxysubsubsection{AdicionarCliente()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Clientes.\+Adicionar\+Cliente (\begin{DoxyParamCaption}\item[{\textbf{ Cliente}}]{cliente }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que adiciona um cliente da lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_clientes_ac9fd1215bc97850bf36185c5bec22877}} 
+\index{BaseDados.Clientes@{BaseDados.Clientes}!GuardarFicheiroClientes@{GuardarFicheiroClientes}}
+\index{GuardarFicheiroClientes@{GuardarFicheiroClientes}!BaseDados.Clientes@{BaseDados.Clientes}}
+\doxysubsubsection{GuardarFicheiroClientes()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Clientes.\+Guardar\+Ficheiro\+Clientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que guarda num ficheiro em binário, a informação dos Clientes. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_clientes_ab3f1cb0ddc86bff2f8da9c2c266bcd10}} 
+\index{BaseDados.Clientes@{BaseDados.Clientes}!LerFicheiroClientes@{LerFicheiroClientes}}
+\index{LerFicheiroClientes@{LerFicheiroClientes}!BaseDados.Clientes@{BaseDados.Clientes}}
+\doxysubsubsection{LerFicheiroClientes()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Clientes.\+Ler\+Ficheiro\+Clientes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que lê um ficheiro em binário, com a informação dos Clientes. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_clientes_a9d38483f06d68cc37c0b223454a4e655}} 
+\index{BaseDados.Clientes@{BaseDados.Clientes}!OrdenarCliente@{OrdenarCliente}}
+\index{OrdenarCliente@{OrdenarCliente}!BaseDados.Clientes@{BaseDados.Clientes}}
+\doxysubsubsection{OrdenarCliente()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Clientes.\+Ordenar\+Cliente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que ordena a lista pelo número de cliente que forma crescente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_clientes_a1b997cd2b2cf8ef155e02c2a202326ef}} 
+\index{BaseDados.Clientes@{BaseDados.Clientes}!RemoverCliente@{RemoverCliente}}
+\index{RemoverCliente@{RemoverCliente}!BaseDados.Clientes@{BaseDados.Clientes}}
+\doxysubsubsection{RemoverCliente()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Clientes.\+Remover\+Cliente (\begin{DoxyParamCaption}\item[{\textbf{ Cliente}}]{cliente }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que remove um cliente da lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_base_dados_1_1_clientes_af11227f19f8281bf1390443d90b33d35}} 
+\index{BaseDados.Clientes@{BaseDados.Clientes}!ObterLista@{ObterLista}}
+\index{ObterLista@{ObterLista}!BaseDados.Clientes@{BaseDados.Clientes}}
+\doxysubsubsection{ObterLista}
+{\footnotesize\ttfamily List$<$\textbf{ Cliente}$>$ Base\+Dados.\+Clientes.\+Obter\+Lista\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Clientes.\+cs}\end{DoxyCompactItemize}

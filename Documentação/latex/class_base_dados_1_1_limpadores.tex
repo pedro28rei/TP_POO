@@ -1,0 +1,162 @@
+\doxysection{Base\+Dados.\+Limpadores Class Reference}
+\label{class_base_dados_1_1_limpadores}\index{BaseDados.Limpadores@{BaseDados.Limpadores}}
+
+
+Classe Limpadores que vai conter uma lista que é responsãvel por armazenar os limpadores.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Limpadores} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Override To\+String da classe Limpadores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ Adicionar\+Limpador} (\textbf{ Limpador} limpador)
+\begin{DoxyCompactList}\small\item\em Método que adiciona um limpador da lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Limpador} (\textbf{ Limpador} limpador)
+\begin{DoxyCompactList}\small\item\em Método que remove um limpador da lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Limpadores} ()
+\begin{DoxyCompactList}\small\item\em Método que ordena a lista pelo número de limpadores que forma crescente. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Limpadores} ()
+\begin{DoxyCompactList}\small\item\em Método que lê um ficheiro em binário, com a informação dos Limpadores. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Limpadores} ()
+\begin{DoxyCompactList}\small\item\em Método que guarda num ficheiro em binário, a informação dos Clientes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Limpador} $>$ \textbf{ Obter\+Lista}\hspace{0.3cm}{\ttfamily  [get]}
+\begin{DoxyCompactList}\small\item\em Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Limpadores que vai conter uma lista que é responsãvel por armazenar os limpadores. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_base_dados_1_1_limpadores_ad347cb92f13827d4610dbeb80ec02f41}} 
+\index{BaseDados.Limpadores@{BaseDados.Limpadores}!Limpadores@{Limpadores}}
+\index{Limpadores@{Limpadores}!BaseDados.Limpadores@{BaseDados.Limpadores}}
+\doxysubsubsection{Limpadores()}
+{\footnotesize\ttfamily Base\+Dados.\+Limpadores.\+Limpadores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_base_dados_1_1_limpadores_ac0355fa1140d6b38e1f87d5851929dbf}} 
+\index{BaseDados.Limpadores@{BaseDados.Limpadores}!AdicionarLimpador@{AdicionarLimpador}}
+\index{AdicionarLimpador@{AdicionarLimpador}!BaseDados.Limpadores@{BaseDados.Limpadores}}
+\doxysubsubsection{AdicionarLimpador()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Limpadores.\+Adicionar\+Limpador (\begin{DoxyParamCaption}\item[{\textbf{ Limpador}}]{limpador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que adiciona um limpador da lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em limpador} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_limpadores_a75df3b4ebd227607679f5294a19f8000}} 
+\index{BaseDados.Limpadores@{BaseDados.Limpadores}!GuardarFicheiroLimpadores@{GuardarFicheiroLimpadores}}
+\index{GuardarFicheiroLimpadores@{GuardarFicheiroLimpadores}!BaseDados.Limpadores@{BaseDados.Limpadores}}
+\doxysubsubsection{GuardarFicheiroLimpadores()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Limpadores.\+Guardar\+Ficheiro\+Limpadores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que guarda num ficheiro em binário, a informação dos Clientes. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_limpadores_a00b77229bb790870a5a86c3fb1ff067c}} 
+\index{BaseDados.Limpadores@{BaseDados.Limpadores}!LerFicheiroLimpadores@{LerFicheiroLimpadores}}
+\index{LerFicheiroLimpadores@{LerFicheiroLimpadores}!BaseDados.Limpadores@{BaseDados.Limpadores}}
+\doxysubsubsection{LerFicheiroLimpadores()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Limpadores.\+Ler\+Ficheiro\+Limpadores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que lê um ficheiro em binário, com a informação dos Limpadores. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_limpadores_a07443efd486ba2cd1bb7d5ab3a6e45a8}} 
+\index{BaseDados.Limpadores@{BaseDados.Limpadores}!OrdenarLimpadores@{OrdenarLimpadores}}
+\index{OrdenarLimpadores@{OrdenarLimpadores}!BaseDados.Limpadores@{BaseDados.Limpadores}}
+\doxysubsubsection{OrdenarLimpadores()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Limpadores.\+Ordenar\+Limpadores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que ordena a lista pelo número de limpadores que forma crescente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_limpadores_a064838c8863dde31aa21997a74e43850}} 
+\index{BaseDados.Limpadores@{BaseDados.Limpadores}!RemoverLimpador@{RemoverLimpador}}
+\index{RemoverLimpador@{RemoverLimpador}!BaseDados.Limpadores@{BaseDados.Limpadores}}
+\doxysubsubsection{RemoverLimpador()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Limpadores.\+Remover\+Limpador (\begin{DoxyParamCaption}\item[{\textbf{ Limpador}}]{limpador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que remove um limpador da lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_limpadores_a0166e55851a0e703489a9df996a7170a}} 
+\index{BaseDados.Limpadores@{BaseDados.Limpadores}!ToString@{ToString}}
+\index{ToString@{ToString}!BaseDados.Limpadores@{BaseDados.Limpadores}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Base\+Dados.\+Limpadores.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Override To\+String da classe Limpadores. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_base_dados_1_1_limpadores_a137c16a8b9854a8569481dcfd9032880}} 
+\index{BaseDados.Limpadores@{BaseDados.Limpadores}!ObterLista@{ObterLista}}
+\index{ObterLista@{ObterLista}!BaseDados.Limpadores@{BaseDados.Limpadores}}
+\doxysubsubsection{ObterLista}
+{\footnotesize\ttfamily List$<$\textbf{ Limpador}$>$ Base\+Dados.\+Limpadores.\+Obter\+Lista\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Limpadores.\+cs}\end{DoxyCompactItemize}

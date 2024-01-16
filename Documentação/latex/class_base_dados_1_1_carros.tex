@@ -1,0 +1,157 @@
+\doxysection{Base\+Dados.\+Carros Class Reference}
+\label{class_base_dados_1_1_carros}\index{BaseDados.Carros@{BaseDados.Carros}}
+
+
+Classe Carros que vai conter uma lista que é responsãvel por armazenar os carros.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Carros} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Override To\+String da classe Carros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ Adicionar\+Carro} (\textbf{ Carro} carro)
+\begin{DoxyCompactList}\small\item\em Método que adiciona um carro da lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Carro} (\textbf{ Carro} carro)
+\begin{DoxyCompactList}\small\item\em Método que remove um carro da lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Carro} ()
+\begin{DoxyCompactList}\small\item\em Método que ordena a lista pelo número de carro de forma crescente. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Carros} ()
+\begin{DoxyCompactList}\small\item\em Método que lê um ficheiro em binário, com a informação dos Carros. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Carros} ()
+\begin{DoxyCompactList}\small\item\em Método que guarda num ficheiro em binário, a informação dos Carros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Carro} $>$ \textbf{ Obter\+Lista}\hspace{0.3cm}{\ttfamily  [get]}
+\begin{DoxyCompactList}\small\item\em Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Carros que vai conter uma lista que é responsãvel por armazenar os carros. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_base_dados_1_1_carros_ab32990c530e66a5e697a6b31f29b0c92}} 
+\index{BaseDados.Carros@{BaseDados.Carros}!Carros@{Carros}}
+\index{Carros@{Carros}!BaseDados.Carros@{BaseDados.Carros}}
+\doxysubsubsection{Carros()}
+{\footnotesize\ttfamily Base\+Dados.\+Carros.\+Carros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_base_dados_1_1_carros_af9898ea2e7cfe16ec291d2f04386018c}} 
+\index{BaseDados.Carros@{BaseDados.Carros}!AdicionarCarro@{AdicionarCarro}}
+\index{AdicionarCarro@{AdicionarCarro}!BaseDados.Carros@{BaseDados.Carros}}
+\doxysubsubsection{AdicionarCarro()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Carros.\+Adicionar\+Carro (\begin{DoxyParamCaption}\item[{\textbf{ Carro}}]{carro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que adiciona um carro da lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em carro} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_carros_a07bf399967a74a68ca857c7696af07e7}} 
+\index{BaseDados.Carros@{BaseDados.Carros}!GuardarFicheiroCarros@{GuardarFicheiroCarros}}
+\index{GuardarFicheiroCarros@{GuardarFicheiroCarros}!BaseDados.Carros@{BaseDados.Carros}}
+\doxysubsubsection{GuardarFicheiroCarros()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Carros.\+Guardar\+Ficheiro\+Carros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que guarda num ficheiro em binário, a informação dos Carros. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_carros_a7f7fc1727c469a818af7bdd886e7733a}} 
+\index{BaseDados.Carros@{BaseDados.Carros}!LerFicheiroCarros@{LerFicheiroCarros}}
+\index{LerFicheiroCarros@{LerFicheiroCarros}!BaseDados.Carros@{BaseDados.Carros}}
+\doxysubsubsection{LerFicheiroCarros()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Carros.\+Ler\+Ficheiro\+Carros (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que lê um ficheiro em binário, com a informação dos Carros. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_carros_ada6f7bd0255bc28e970fe8c28b370a07}} 
+\index{BaseDados.Carros@{BaseDados.Carros}!OrdenarCarro@{OrdenarCarro}}
+\index{OrdenarCarro@{OrdenarCarro}!BaseDados.Carros@{BaseDados.Carros}}
+\doxysubsubsection{OrdenarCarro()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Carros.\+Ordenar\+Carro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que ordena a lista pelo número de carro de forma crescente. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_carros_a1dabe97cacb14b6e185111ba32ace3d8}} 
+\index{BaseDados.Carros@{BaseDados.Carros}!RemoverCarro@{RemoverCarro}}
+\index{RemoverCarro@{RemoverCarro}!BaseDados.Carros@{BaseDados.Carros}}
+\doxysubsubsection{RemoverCarro()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Carros.\+Remover\+Carro (\begin{DoxyParamCaption}\item[{\textbf{ Carro}}]{carro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que remove um carro da lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_carros_aa05e3df825a8ba9cb19faba482f7fdb5}} 
+\index{BaseDados.Carros@{BaseDados.Carros}!ToString@{ToString}}
+\index{ToString@{ToString}!BaseDados.Carros@{BaseDados.Carros}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Base\+Dados.\+Carros.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Override To\+String da classe Carros. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_base_dados_1_1_carros_a17f6003640e1dd2ac42478415047e960}} 
+\index{BaseDados.Carros@{BaseDados.Carros}!ObterLista@{ObterLista}}
+\index{ObterLista@{ObterLista}!BaseDados.Carros@{BaseDados.Carros}}
+\doxysubsubsection{ObterLista}
+{\footnotesize\ttfamily List$<$\textbf{ Carro}$>$ Base\+Dados.\+Carros.\+Obter\+Lista\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Carros.\+cs}\end{DoxyCompactItemize}

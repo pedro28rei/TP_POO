@@ -1,0 +1,162 @@
+\doxysection{Base\+Dados.\+Vendedores Class Reference}
+\label{class_base_dados_1_1_vendedores}\index{BaseDados.Vendedores@{BaseDados.Vendedores}}
+
+
+Classe Vendedores que vai conter uma lista que é responsãvel por armazenar os vendedores.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Vendedores} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Override To\+String da classe Vendedores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ Adicionar\+Vendedor} (\textbf{ Vendedor} vendedor)
+\begin{DoxyCompactList}\small\item\em Método que adiciona um vendedor na lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Remover\+Vendedor} (\textbf{ Vendedor} vendedor)
+\begin{DoxyCompactList}\small\item\em Método que remove um vendedor da lista estática, retorna true caso seja bem sucedida e false caso contrário. \end{DoxyCompactList}\item 
+static bool \textbf{ Ordenar\+Vendedor} ()
+\begin{DoxyCompactList}\small\item\em Método que ordena a lista pelo número de vendedores de forma crescente. \end{DoxyCompactList}\item 
+static bool \textbf{ Ler\+Ficheiro\+Vendedores} ()
+\begin{DoxyCompactList}\small\item\em Método que lê um ficheiro em binário, com a informação dos Vendedores. \end{DoxyCompactList}\item 
+static bool \textbf{ Guardar\+Ficheiro\+Vendedores} ()
+\begin{DoxyCompactList}\small\item\em Método que guarda num ficheiro em binário, a informação dos Vendedores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Vendedor} $>$ \textbf{ Obter\+Lista}\hspace{0.3cm}{\ttfamily  [get]}
+\begin{DoxyCompactList}\small\item\em Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Vendedores que vai conter uma lista que é responsãvel por armazenar os vendedores. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_base_dados_1_1_vendedores_a7c5489b03a3aa8f78132f0da44d36ff7}} 
+\index{BaseDados.Vendedores@{BaseDados.Vendedores}!Vendedores@{Vendedores}}
+\index{Vendedores@{Vendedores}!BaseDados.Vendedores@{BaseDados.Vendedores}}
+\doxysubsubsection{Vendedores()}
+{\footnotesize\ttfamily Base\+Dados.\+Vendedores.\+Vendedores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_base_dados_1_1_vendedores_aaae2792884bbe2133d3323b6f4fa3476}} 
+\index{BaseDados.Vendedores@{BaseDados.Vendedores}!AdicionarVendedor@{AdicionarVendedor}}
+\index{AdicionarVendedor@{AdicionarVendedor}!BaseDados.Vendedores@{BaseDados.Vendedores}}
+\doxysubsubsection{AdicionarVendedor()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Vendedores.\+Adicionar\+Vendedor (\begin{DoxyParamCaption}\item[{\textbf{ Vendedor}}]{vendedor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que adiciona um vendedor na lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vendedor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_vendedores_a7bcc6b56d7b3732aa4d5f75bef13dcc8}} 
+\index{BaseDados.Vendedores@{BaseDados.Vendedores}!GuardarFicheiroVendedores@{GuardarFicheiroVendedores}}
+\index{GuardarFicheiroVendedores@{GuardarFicheiroVendedores}!BaseDados.Vendedores@{BaseDados.Vendedores}}
+\doxysubsubsection{GuardarFicheiroVendedores()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Vendedores.\+Guardar\+Ficheiro\+Vendedores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que guarda num ficheiro em binário, a informação dos Vendedores. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_vendedores_ac1e4d42f33ad7a1643c31399f00ea609}} 
+\index{BaseDados.Vendedores@{BaseDados.Vendedores}!LerFicheiroVendedores@{LerFicheiroVendedores}}
+\index{LerFicheiroVendedores@{LerFicheiroVendedores}!BaseDados.Vendedores@{BaseDados.Vendedores}}
+\doxysubsubsection{LerFicheiroVendedores()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Vendedores.\+Ler\+Ficheiro\+Vendedores (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que lê um ficheiro em binário, com a informação dos Vendedores. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_vendedores_a02964da5e8b251b294e930b83fbc08a6}} 
+\index{BaseDados.Vendedores@{BaseDados.Vendedores}!OrdenarVendedor@{OrdenarVendedor}}
+\index{OrdenarVendedor@{OrdenarVendedor}!BaseDados.Vendedores@{BaseDados.Vendedores}}
+\doxysubsubsection{OrdenarVendedor()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Vendedores.\+Ordenar\+Vendedor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que ordena a lista pelo número de vendedores de forma crescente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vendedor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_vendedores_abaa1b1305ecabf8d6185750295d56597}} 
+\index{BaseDados.Vendedores@{BaseDados.Vendedores}!RemoverVendedor@{RemoverVendedor}}
+\index{RemoverVendedor@{RemoverVendedor}!BaseDados.Vendedores@{BaseDados.Vendedores}}
+\doxysubsubsection{RemoverVendedor()}
+{\footnotesize\ttfamily static bool Base\+Dados.\+Vendedores.\+Remover\+Vendedor (\begin{DoxyParamCaption}\item[{\textbf{ Vendedor}}]{vendedor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Método que remove um vendedor da lista estática, retorna true caso seja bem sucedida e false caso contrário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vendedor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_base_dados_1_1_vendedores_aa77c2cbba5fe95bf3e64a436e6f60a77}} 
+\index{BaseDados.Vendedores@{BaseDados.Vendedores}!ToString@{ToString}}
+\index{ToString@{ToString}!BaseDados.Vendedores@{BaseDados.Vendedores}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Base\+Dados.\+Vendedores.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Override To\+String da classe Vendedores. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_base_dados_1_1_vendedores_a7b3f311954c2504c720c3511a933c9d1}} 
+\index{BaseDados.Vendedores@{BaseDados.Vendedores}!ObterLista@{ObterLista}}
+\index{ObterLista@{ObterLista}!BaseDados.Vendedores@{BaseDados.Vendedores}}
+\doxysubsubsection{ObterLista}
+{\footnotesize\ttfamily List$<$\textbf{ Vendedor}$>$ Base\+Dados.\+Vendedores.\+Obter\+Lista\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Propriedade que permite obter a lista, apenas com get para ter acesso restrito e não ser definido por outrém. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Vendedores.\+cs}\end{DoxyCompactItemize}

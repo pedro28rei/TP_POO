@@ -1,0 +1,260 @@
+\doxysection{Objetos\+Negocio.\+Mota Class Reference}
+\label{class_objetos_negocio_1_1_mota}\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+
+
+Classe Mota.  
+
+
+Inheritance diagram for Objetos\+Negocio.\+Mota\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_objetos_negocio_1_1_mota}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Mota} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Mota,sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Mota} (int codigo\+Automovel, string data\+Fabrico, string marca, string modelo, float preco, string matricula, int codigo\+Mota, int potencia, float consumo, string cor)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Mota,com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para o carro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Automovel}}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Automovel} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria um Automóvel,sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Automovel} (int codigo\+Automovel, string data\+Fabrico, string marca, string modelo, float preco, string matricula)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Automóvel, com parâmetros definidos. \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a automovel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Mota} c1, \textbf{ Mota} c2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Mota é igual ao outro objeto atráves do cógido. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Mota} a1, \textbf{ Mota} a2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Mota é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions inherited from \textbf{ Objetos\+Negocio.\+Automovel}}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Automovel} a1, \textbf{ Automovel} a2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Automovel é igual do outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Automovel} a1, \textbf{ Automovel} a2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Automovel é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Codigo\+Mota}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do codigo da mota. \end{DoxyCompactList}\item 
+float \textbf{ Consumo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do Consumo de uma Mota. \end{DoxyCompactList}\item 
+string \textbf{ Cor}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da cor de uma Mota. \end{DoxyCompactList}\item 
+int \textbf{ Potencia}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade dos Cavalos de um Carro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties inherited from \textbf{ Objetos\+Negocio.\+Automovel}}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Codigo\+Automovel}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do codigo de um automovel. \end{DoxyCompactList}\item 
+string \textbf{ Data\+Fabrico}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da Data de Fabrico de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Marca}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da Marca de um automovel. \end{DoxyCompactList}\item 
+string \textbf{ Modelo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da Modelo de um Automovel. \end{DoxyCompactList}\item 
+float \textbf{ Preco}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do preco de um automovel. \end{DoxyCompactList}\item 
+string \textbf{ Matricula}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da matricula de um automovel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Mota. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_objetos_negocio_1_1_mota_a61b6052546ec5fba4bb873a6591a2648}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!Mota@{Mota}}
+\index{Mota@{Mota}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{Mota()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Mota.\+Mota (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria uma Mota,sem parâmetros definidos. 
+
+\mbox{\label{class_objetos_negocio_1_1_mota_ae77520ae5a5988a6e38b0476404b82fa}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!Mota@{Mota}}
+\index{Mota@{Mota}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{Mota()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Mota.\+Mota (\begin{DoxyParamCaption}\item[{int}]{codigo\+Automovel,  }\item[{string}]{data\+Fabrico,  }\item[{string}]{marca,  }\item[{string}]{modelo,  }\item[{float}]{preco,  }\item[{string}]{matricula,  }\item[{int}]{codigo\+Mota,  }\item[{int}]{potencia,  }\item[{float}]{consumo,  }\item[{string}]{cor }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria uma Mota,com parâmetros definidos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigo\+Automovel} & \\
+\hline
+{\em data\+Fabrico} & \\
+\hline
+{\em marca} & \\
+\hline
+{\em modelo} & \\
+\hline
+{\em preco} & \\
+\hline
+{\em matricula} & \\
+\hline
+{\em codigo\+Mota} & \\
+\hline
+{\em potencia} & \\
+\hline
+{\em consumo} & \\
+\hline
+{\em cor} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_objetos_negocio_1_1_mota_a4436713f4c6aa97537c550ce6e2faa43}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!Equals@{Equals}}
+\index{Equals@{Equals}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{Equals()}
+{\footnotesize\ttfamily override bool Objetos\+Negocio.\+Mota.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Verificar se os dois objetos são do mesmo tipo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_mota_ac2ca20e946db471d14c5eed2af32fc9a}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{GetHashCode()}
+{\footnotesize\ttfamily override int Objetos\+Negocio.\+Mota.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém um código hash para o carro. 
+
+\mbox{\label{class_objetos_negocio_1_1_mota_a08c1ee3d8ee0be3b57ccd9952846b0df}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{operator"!=()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Mota.\+operator!= (\begin{DoxyParamCaption}\item[{\textbf{ Mota}}]{a1,  }\item[{\textbf{ Mota}}]{a2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Mota é diferente do outro objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a1} & \\
+\hline
+{\em a2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_mota_ad0d3b152983ce80bd00f8a045e1108bd}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!operator==@{operator==}}
+\index{operator==@{operator==}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{operator==()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Mota.\+operator== (\begin{DoxyParamCaption}\item[{\textbf{ Mota}}]{c1,  }\item[{\textbf{ Mota}}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Mota é igual ao outro objeto atráves do cógido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & \\
+\hline
+{\em c2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_mota_a13878d220d857c3b59453b5f00eba004}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!ToString@{ToString}}
+\index{ToString@{ToString}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Objetos\+Negocio.\+Mota.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Conversão do objeto numa string, mostrando os seus dados. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_objetos_negocio_1_1_mota_a4f6bf1839b1b5f2956287e129f3eb091}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!CodigoMota@{CodigoMota}}
+\index{CodigoMota@{CodigoMota}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{CodigoMota}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Mota.\+Codigo\+Mota\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do codigo da mota. 
+
+\mbox{\label{class_objetos_negocio_1_1_mota_a5db588395c1bab6868193f9be9d053da}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!Consumo@{Consumo}}
+\index{Consumo@{Consumo}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{Consumo}
+{\footnotesize\ttfamily float Objetos\+Negocio.\+Mota.\+Consumo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do Consumo de uma Mota. 
+
+\mbox{\label{class_objetos_negocio_1_1_mota_a8102fec9c73fdf7be8cc484c713e7a5b}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!Cor@{Cor}}
+\index{Cor@{Cor}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{Cor}
+{\footnotesize\ttfamily string Objetos\+Negocio.\+Mota.\+Cor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade da cor de uma Mota. 
+
+\mbox{\label{class_objetos_negocio_1_1_mota_af39c926faa7354610c3c5adcc1ef9854}} 
+\index{ObjetosNegocio.Mota@{ObjetosNegocio.Mota}!Potencia@{Potencia}}
+\index{Potencia@{Potencia}!ObjetosNegocio.Mota@{ObjetosNegocio.Mota}}
+\doxysubsubsection{Potencia}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Mota.\+Potencia\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade dos Cavalos de um Carro. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Mota.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,223 @@
+\doxysection{Objetos\+Negocio.\+Pessoa Class Reference}
+\label{class_objetos_negocio_1_1_pessoa}\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+
+
+Classe Pessoa, que vai ter como objetos pessoas, que tem um nome, idade, data nascimento, sexo e morada.  
+
+
+Inheritance diagram for Objetos\+Negocio.\+Pessoa\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.187500cm]{class_objetos_negocio_1_1_pessoa}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pessoa} ()
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Pessoa,sem parâmetros definidos. \end{DoxyCompactList}\item 
+\textbf{ Pessoa} (string nome, int idade, Date\+Time data\+Nascimento, string sexo, string morada)
+\begin{DoxyCompactList}\small\item\em Construtor por omissão que cria uma Pessoa, com parâmetros definidos(nome, idade, data nascimento, sexo ,morada) \end{DoxyCompactList}\item 
+override string \textbf{ To\+String} ()
+\begin{DoxyCompactList}\small\item\em Conversão do objeto numa string, mostrando os seus dados. \end{DoxyCompactList}\item 
+override bool \textbf{ Equals} (object obj)
+\begin{DoxyCompactList}\small\item\em Verificar se os dois objetos são do mesmo tipo. \end{DoxyCompactList}\item 
+override int \textbf{ Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Obtém um código hash para a pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \textbf{ operator==} (\textbf{ Pessoa} p1, \textbf{ Pessoa} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é igual ao outro objeto. \end{DoxyCompactList}\item 
+static bool \textbf{ operator!=} (\textbf{ Pessoa} p1, \textbf{ Pessoa} p2)
+\begin{DoxyCompactList}\small\item\em Verificar se um objeto da classe Pessoa é diferente do outro objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \textbf{ Nome}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do nome de uma Pessoa. \end{DoxyCompactList}\item 
+int \textbf{ Idade}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da idade de uma Pessoa. \end{DoxyCompactList}\item 
+Date\+Time \textbf{ Data\+Nascimento}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade da data\+Nascimento de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Sexo}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propriedade do sexo de uma Pessoa. \end{DoxyCompactList}\item 
+string \textbf{ Morada}\hspace{0.3cm}{\ttfamily  [get, set]}
+\begin{DoxyCompactList}\small\item\em Propiedade da morada de uma pessoa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe Pessoa, que vai ter como objetos pessoas, que tem um nome, idade, data nascimento, sexo e morada. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_objetos_negocio_1_1_pessoa_af413e5c5c6631617514bdb6aabce0cd9}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!Pessoa@{Pessoa}}
+\index{Pessoa@{Pessoa}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{Pessoa()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Pessoa.\+Pessoa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria uma Pessoa,sem parâmetros definidos. 
+
+\mbox{\label{class_objetos_negocio_1_1_pessoa_a65dae9b108df93868c0d83e3bf8c37e5}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!Pessoa@{Pessoa}}
+\index{Pessoa@{Pessoa}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{Pessoa()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Objetos\+Negocio.\+Pessoa.\+Pessoa (\begin{DoxyParamCaption}\item[{string}]{nome,  }\item[{int}]{idade,  }\item[{Date\+Time}]{data\+Nascimento,  }\item[{string}]{sexo,  }\item[{string}]{morada }\end{DoxyParamCaption})}
+
+
+
+Construtor por omissão que cria uma Pessoa, com parâmetros definidos(nome, idade, data nascimento, sexo ,morada) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & \\
+\hline
+{\em idade} & \\
+\hline
+{\em data\+Nascimento} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_objetos_negocio_1_1_pessoa_a100590cda5ba431aa78ac2432d614973}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!Equals@{Equals}}
+\index{Equals@{Equals}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{Equals()}
+{\footnotesize\ttfamily override bool Objetos\+Negocio.\+Pessoa.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Verificar se os dois objetos são do mesmo tipo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_pessoa_a0e94ab5a3fb55e7bcb34c7abb1d82ad8}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{GetHashCode()}
+{\footnotesize\ttfamily override int Objetos\+Negocio.\+Pessoa.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém um código hash para a pessoa. 
+
+\mbox{\label{class_objetos_negocio_1_1_pessoa_a442904e769c4943df780f5c9870e3f36}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{operator"!=()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Pessoa.\+operator!= (\begin{DoxyParamCaption}\item[{\textbf{ Pessoa}}]{p1,  }\item[{\textbf{ Pessoa}}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Pessoa é diferente do outro objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_pessoa_ace5485c54104984e0e2248035fb6af6c}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!operator==@{operator==}}
+\index{operator==@{operator==}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{operator==()}
+{\footnotesize\ttfamily static bool Objetos\+Negocio.\+Pessoa.\+operator== (\begin{DoxyParamCaption}\item[{\textbf{ Pessoa}}]{p1,  }\item[{\textbf{ Pessoa}}]{p2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Verificar se um objeto da classe Pessoa é igual ao outro objeto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & \\
+\hline
+{\em p2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\label{class_objetos_negocio_1_1_pessoa_ac2cf6387370a9caf0a80dca664323560}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!ToString@{ToString}}
+\index{ToString@{ToString}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{ToString()}
+{\footnotesize\ttfamily override string Objetos\+Negocio.\+Pessoa.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Conversão do objeto numa string, mostrando os seus dados. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\label{class_objetos_negocio_1_1_pessoa_a3d3e872a180f7c53265c11d1b7b8d329}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!DataNascimento@{DataNascimento}}
+\index{DataNascimento@{DataNascimento}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{DataNascimento}
+{\footnotesize\ttfamily Date\+Time Objetos\+Negocio.\+Pessoa.\+Data\+Nascimento\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade da data\+Nascimento de uma Pessoa. 
+
+\mbox{\label{class_objetos_negocio_1_1_pessoa_a6dc521c1250c17356873aa8dc172174e}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!Idade@{Idade}}
+\index{Idade@{Idade}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{Idade}
+{\footnotesize\ttfamily int Objetos\+Negocio.\+Pessoa.\+Idade\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade da idade de uma Pessoa. 
+
+\mbox{\label{class_objetos_negocio_1_1_pessoa_ad5a7e12e5a4ec42a9de3027f0d10963c}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!Morada@{Morada}}
+\index{Morada@{Morada}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{Morada}
+{\footnotesize\ttfamily string Objetos\+Negocio.\+Pessoa.\+Morada\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propiedade da morada de uma pessoa. 
+
+\mbox{\label{class_objetos_negocio_1_1_pessoa_a6c6e1174264ecb79dd92b24089480421}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!Nome@{Nome}}
+\index{Nome@{Nome}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{Nome}
+{\footnotesize\ttfamily string Objetos\+Negocio.\+Pessoa.\+Nome\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do nome de uma Pessoa. 
+
+\mbox{\label{class_objetos_negocio_1_1_pessoa_a4acec7ca8a851f16b69ddc6a011a414b}} 
+\index{ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}!Sexo@{Sexo}}
+\index{Sexo@{Sexo}!ObjetosNegocio.Pessoa@{ObjetosNegocio.Pessoa}}
+\doxysubsubsection{Sexo}
+{\footnotesize\ttfamily string Objetos\+Negocio.\+Pessoa.\+Sexo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Propriedade do sexo de uma Pessoa. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Pessoa.\+cs}\end{DoxyCompactItemize}
