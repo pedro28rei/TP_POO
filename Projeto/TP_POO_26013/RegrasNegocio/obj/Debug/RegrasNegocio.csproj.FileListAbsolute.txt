@@ -1,7 +1,5 @@
 C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\RegrasNegocio\bin\Debug\RegrasNegocio.dll
 C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\RegrasNegocio\bin\Debug\RegrasNegocio.pdb
-C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\RegrasNegocio\bin\Debug\BaseDados.dll
-C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\RegrasNegocio\bin\Debug\ObjetosNegocio.dll
 C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\RegrasNegocio\bin\Debug\BaseDados.pdb
 C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\RegrasNegocio\bin\Debug\ObjetosNegocio.pdb
 C:\Users\pedro\Desktop\Projetos GitHub\TP_POO\Projeto\TP_POO_26013\RegrasNegocio\obj\Debug\RegrasNegocio.csproj.AssemblyReference.cache

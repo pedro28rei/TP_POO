@@ -340,5 +340,57 @@ namespace RegrasNegocio
         }
         #endregion
 
+        #region Regras Vendas
+
+        
+         
+        /// </summary>
+        /// Método que permite adicionar uma venda na lista, e retorna true em caso de sucesso ou false em caso o oposto
+        /// <returns></returns>
+        public static bool AdicionarVendaBD(Venda venda)
+        {
+            //if () return false;
+            //else 
+            return true; //Vendas.AdicionarVenda(venda);
+        }
+
+        /// <summary>
+        /// Método que define as regras para poder remover uma Venda da lista, e retorna true em caso de sucesso ou false caso o oposto
+        /// </summary>
+        /// <param name="limpador"></param>
+        /// <returns></returns>
+        public static bool RemoverVendaBD(Venda venda)
+        {
+            return Vendas.RemoverVenda(venda);
+        }
+
+        /// <summary>
+        /// Método que define as regras para poder ordenar a lista de Vendas, e retorna true em caso de sucesso e false caso o oposto
+        /// </summary>
+        /// <returns></returns>
+        public static bool OrdenarVendasBD()
+        {
+            return Vendas.OrdenarVendas();
+        }
+
+        /// <summary>
+        /// Metodo que define as regras para poder ler o ficheiro com os dados das Vendas, e retorna a lista em caso de sucesso
+        /// </summary>
+        /// <returns></returns>
+        public static bool LerFicheiroVendasBD()
+        {
+            return Vendas.LerFicheiroVendas();
+        }
+
+        /// <summary>
+        /// Metodo que define as regras para poder guardar o ficheiro com os dados das Vendas, e retorna true em caso de sucesso e false caso o oposto
+        /// </summary>
+        /// <returns></returns>
+        public static bool GuardarFicheiroVendasBD()
+        {
+            return Vendas.GuardarFicheiroVendas();
+        }
+
+        #endregion
     }
 }

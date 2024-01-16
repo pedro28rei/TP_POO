@@ -31,10 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BaseDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\BaseDados.dll</HintPath>
-    </Reference>
     <Reference Include="ObjetosNegocio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\ObjetosNegocio.dll</HintPath>
@@ -54,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DiagramaClasses.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseDados\BaseDados.csproj">
+      <Project>{7f1cb599-4b9b-4369-bd1f-472b5633740c}</Project>
+      <Name>BaseDados</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

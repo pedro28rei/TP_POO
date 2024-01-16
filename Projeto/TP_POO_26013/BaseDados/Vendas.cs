@@ -17,11 +17,12 @@ namespace BaseDados
     /// <summary>
     /// Classe de Vendas, onde vão ser contidos os dados das vendas e os seus métodos
     /// </summary>
-    internal class Vendas
+    public class Vendas
     {
         #region ATRIBUTOS 
 
         private static List<Venda> listaVendas;
+
         #endregion
 
         #region METODOS                                                                        

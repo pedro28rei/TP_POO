@@ -9,6 +9,7 @@
 */
 
 using ObjetosNegocio;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -58,7 +59,7 @@ namespace BaseDados
         /// </summary>
         public List<Cliente> ObterLista
         {
-            get { return listaClientes; }         
+            get { return listaClientes; }
         }
 
 
@@ -97,7 +98,7 @@ namespace BaseDados
         {
             foreach (Cliente c in listaClientes)
             {
-                if (c.Equals(cliente)) { listaClientes.Remove(cliente);  return true; }
+                if (c.Equals(cliente)) { listaClientes.Remove(cliente); return true; }
             }
 
             return false;
@@ -120,17 +121,23 @@ namespace BaseDados
         /// <returns></returns>
         public static bool LerFicheiroClientes()
         {
-        
+
+            try { 
                 FileStream fs = File.Open("Clientes.bin", FileMode.Open, FileAccess.ReadWrite);
 
-                BinaryFormatter bf = new BinaryFormatter();
+            BinaryFormatter bf = new BinaryFormatter();
 
-                listaClientes = (List<Cliente>)bf.Deserialize(fs);
-
+            listaClientes = (List<Cliente>)bf.Deserialize(fs);
+                fs.Close();
+                return true;
+                }
+         catch (Exception e)
+            {
+            }
         
-            fs.Close();
+           
 
-            return true;
+            return false;
 
         }
 

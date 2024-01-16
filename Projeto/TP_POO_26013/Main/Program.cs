@@ -31,6 +31,8 @@ namespace Main
             Regras.LerFicheiroAdministradoresBD();
             Regras.LerFicheiroLimpadoresBD();
 
+            //Execução dos métodos que permitem a leitura dos ficheiros com os dados das vendas
+            Regras.LerFicheiroVendasBD();
 
 
             //Criação de objetos novos das várias classes existentes
@@ -40,7 +42,7 @@ namespace Main
             Vendedor v1 = new Vendedor();
             Administrador admin1 = new Administrador();
             Limpador limp1 = new Limpador();
-
+            Venda vnd1 = new Venda();
 
 
             bool aux; // variável auxiliar
@@ -52,6 +54,8 @@ namespace Main
             aux = Regras.AdicionarVendedorBD(v1);
             aux = Regras.AdicionarAdministradorBD(admin1);
             aux = Regras.AdicionarLimpadorBD(limp1);
+            aux = Regras.AdicionarVendaBD(vnd1);
+
 
             //Execução dos métodos que permitem remover um objeto á respetiva lista que os armazena, e aos seus dados
             aux = Regras.RemoverCarroBD(c1);
@@ -60,6 +64,8 @@ namespace Main
             aux = Regras.RemoverVendedorBD(v1);
             aux = Regras.RemoverAdministradorBD(admin1);
             aux = Regras.RemoverLimpadorBD(limp1);
+            aux = Regras.RemoverVendaBD(vnd1);
+
 
             //Execução dos métodos que permitem ordenar as listas, neste caso por ordem crescente dos respetivos códigos de identificação
             Regras.OrdernarCarroBD();
@@ -68,7 +74,7 @@ namespace Main
             Regras.OrdenarVendedorBD();
             Regras.OrdenarAdministradorBD();
             Regras.OrdenarLimpadoresBD();
-
+            Regras.OrdenarVendasBD();
 
 
             //Execução dos métodos que permitem gravar os dados dos Automóveis nos respetivos ficheiros
@@ -79,7 +85,10 @@ namespace Main
             Regras.GuardarFicheiroVendedoresBD();
             Regras.GuardarFicheiroClientesBD();
             Regras.GuardarFicheiroAdministradoresBD();
-            Regras.GuardarFicheiroLimpadoresBD(); 
+            Regras.GuardarFicheiroLimpadoresBD();
+
+            //Execução dos métodos que permitem gravar os dados das vendas do stand nos respetivos ficheiros
+            Regras.GuardarFicheiroVendasBD();
 
         }
     }
